@@ -1,14 +1,14 @@
 # Resource Server API Documentation
 
-## [Requests](requests.md)
+### [Requests](requests.md)
 
-## [Responses](responses.md)
+### [Responses](responses.md)
 
-## Resources
+### Resources
 
-### [Clients](resources/clients.md)
+[Clients](resources/clients.md)
 
-### [Providers](resources/providers.md)
+[Providers](resources/providers.md)
 
 * [Comments](resources/providers/comments.md)
 * [Locations](resources/providers/locations.md)
