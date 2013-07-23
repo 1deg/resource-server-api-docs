@@ -25,6 +25,6 @@ All timestamps should be in ISO 8601 format:
 | Parameter    | Type      | Description                    |
 |--------------|-----------|--------------------------------|
 | `page`       | `integer` | The offset.                    |
-| `page_count` | `integer` | The number of items to return. |
+| `per_page`   | `integer` | The number of items to return. |
 | `order`      | `string`  | The sort order by which items will be returned. Common values are `name_asc` and `name_desc`. Defaults to `name_asc`.|
 | `query`      | `string`  | The basic expression to query in the name field. |
