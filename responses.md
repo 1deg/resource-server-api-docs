@@ -1,5 +1,17 @@
 # Responses
 
+## Errors
+
+Errors will be returned with a `status` and `error` message, as in the following example:
+
+    HTTP/1.1 400 Bad Request
+    Content-Type: application/json; charset=utf-8
+    
+    {
+      "status": "error",
+      "error": "Missing API key."
+    }
+
 ## Response Codes
 
 | HTTP Code | Name                  | Description                     |
