@@ -1,5 +1,13 @@
 # Responses
 
+## Content type
+
+All responses are JSON by default.
+
+Clients can request an XML response by appending `.xml` to endpoints. For example:
+
+    /v1/test.xml
+
 ## Errors
 
 Errors will be returned with a `status` and `error` message, as in the following example:
