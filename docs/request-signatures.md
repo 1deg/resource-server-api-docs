@@ -33,6 +33,10 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
 
 #### Ruby
 
+    require 'time'
+    require 'openssl'
+    require 'erb'
+
     params = {
         resource_id: 3841,
         name: "Existing Resource Provider, Inc."
@@ -43,7 +47,7 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
         param_string << "&" unless str.blank?
         param_string << "#{ERB::Util.url_encode(key.to_s)}=#{ERB::Util.url_encode(params[key].to_s)}"
     end
-    date = "2013-08-02T00:06:54Z"
+    date = Time.now.utc.iso8601
     signed_params = OpenSSL::HMAC.digest('sha256', my_secret_token, param_string)
     signed_date = OpenSSL::HMAC.digest('sha256', signed_params, date)
     signature = Digest::SHA2.hexdigest(signed_date)
