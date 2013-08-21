@@ -1,5 +1,3 @@
-# Resource Server API Documentation
-
 ### [Requests](/docs/requests.md)
 
 ### [Responses](/docs/responses.md)
