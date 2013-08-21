@@ -19,9 +19,9 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
 
 1. Create the string to sign:
     
-    a. Take the parameters being submitted with the request, and sort the parameters alphabetically in descending order. These parameters should include any resource ID parameters specified in the endpoint. For example, the parameters collection for the endpoint `/v1/resources/:resource_id/locations/:id` should include `resource_id` and `id`.
-    b. URL encode the parameter names and values. Use `%20` for space (' ') instead of `+`.
-    c. Connect each parameter in a `key=value` format and append them to each other, joined by ampersands (`&`). For example, `name=Organization%20Inc&description=An%20example`.
+    1. Take the parameters being submitted with the request, and sort the parameters alphabetically in descending order. These parameters should include any resource ID parameters specified in the endpoint. For example, the parameters collection for the endpoint `/v1/resources/:resource_id/locations/:id` should include `resource_id` and `id`.
+    1. URL encode the parameter names and values. Use `%20` for space (' ') instead of `+`.
+    2. Connect each parameter in a `key=value` format and append them to each other, joined by ampersands (`&`). For example, `name=Organization%20Inc&description=An%20example`.
 
 2. Create an HMAC digest of the string created in step 1, using your API secret token as the key.
 
