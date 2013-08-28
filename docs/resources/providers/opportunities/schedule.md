@@ -1,6 +1,8 @@
 # Resource
 
-## Schedules on Locations
+## Schedule on Opportunities
+
+Only one schedule can exist on an opportunity.
 
 ### Attributes
 
@@ -30,14 +32,14 @@ All hours `string` fields are of the format:
 
 ### Endpoints
 
-#### `POST resources/:resource_id/locations/:id/schedule`
+#### `POST resources/:resource_id/opportunities/:opportunity_id/locations/:id/schedule`
 
 Creates a schedule on a location. Only one schedule can exist for a location.
 
-#### `PUT resources/:resource_id/locations/:id/schedule`
+#### `PUT resources/:resource_id/opportunities/:opportunity_id/locations/:id/schedule`
 
 Updates a location's schedule.
 
-#### `DELETE resources/:resource_id/locations/:id/schedule`
+#### `DELETE resources/:resource_id/opportunities/:opportunity_id/locations/:id/schedule`
 
 Deletes the location's schedule.
