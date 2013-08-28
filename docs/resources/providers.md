@@ -10,7 +10,6 @@ Field          | Type         | Optional | Description
 `name`         | `string`     |          | The name of the resource provider.
 `website`      | `string`     | yes      | The URL of the resource provider's website.
 `description`  | `text`       | yes      | The description of the resource provider.
-`picture_path` | `string`     | yes      | URL of the resource's profile photo or logo.
 `updated_at`   | `string`     | yes      | URL of the resource's profile photo or logo.
 
 ### Endpoints

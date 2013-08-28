@@ -6,6 +6,7 @@
 
 Field        | Type      | Optional | Description                        
 -------------|-----------|----------|----------------------------------------
+`id`         | `integer` |          | The unique ID of the rating type.
 `name`       | `string`  |          | The name of the rating type.
 `value_type` | `string`  |          | The type of the rating value (`string`, `integer`, or `decimal`)
 

@@ -20,7 +20,11 @@ Field            | Type         | Optional | Description
 
 #### `GET resources/:resource_id/opportunities`
 
-Returns the list of opportunities on a provider.
+Returns the list of opportunities on a provider with the following nested resources:
+
+- [`properties`](/docs/providers/opportunities/properties.md)
+- [`tags`](/docs/providers/opportunities/tags.md)
+- [`locations`](/docs/providers/opportunities/locations.md)
 
 #### `POST resources/:resource_id/opportunities`
 

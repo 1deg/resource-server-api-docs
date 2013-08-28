@@ -1,6 +1,6 @@
 # Resources
 
-## Locations on Resource Providers
+## Locations on Opportunities
 
 ### Attributes
 
@@ -19,28 +19,28 @@ Field          | Type         | Optional | Description
 
 ### Endpoints
 
-#### `GET resources/:resource_id/locations`
+#### `GET resources/:resource_id/opportunities/:opportunity_id/locations`
 
-Returns the locations of a resource.
+Returns the locations of an opportunity.
 
-#### `POST resources/:resource_id/locations`
+#### `POST resources/:resource_id/opportunities/:opportunity_id/locations`
 
-Creates a new location of a resource.
+Creates a new location of an opportunity.
 
-#### `GET resources/:resource_id/locations/:id`
+#### `GET resources/:resource_id/opportunities/:opportunity_id/locations/:id`
 
 Returns a specific location with the following nested resources:
 
 - [`phones`](locations/phones.md)
 - [`schedule`](locations/schedule.md)
 
-#### `PUT resources/:resource_id/locations/:id`
+#### `PUT resources/:resource_id/opportunities/:opportunity_id/locations/:id`
 
-Updates a location of a resource.
+Updates a location of an opportunity.
 
-#### `DELETE resources/:resource_id/locations/:id`
+#### `DELETE resources/:resource_id/opportunities/:opportunity_id/locations/:id`
 
-Deletes a location of a resource.
+Deletes a location of an opportunity.
 
 #### Permissions
 

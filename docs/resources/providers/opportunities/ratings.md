@@ -1,6 +1,6 @@
 # Resources
 
-## Ratings on Resource Providers
+## Ratings on Opportunities
 
 ### Attributes
 
@@ -14,8 +14,7 @@ Field            | Type      | Optional | Description
 
 #### `GET resources/:resource_id/ratings`
 
-Returns the aggregate ratings on a provider as an array (e.g. `[name: value, name2: value2]`).
-
+Returns the aggregate ratings on an opportunity as an array (e.g. `[name: value, name2: value2]`).
 
 #### `POST resources/:resource_id/ratings`
 

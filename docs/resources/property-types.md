@@ -6,6 +6,7 @@
 
 Field        | Type      | Optional | Description                        
 -------------|-----------|----------|----------------------------------------
+`id`         | `integer` |          | The unique ID of the property type.
 `name`       | `string`  |          | The name of the property type.
 `value_type` | `string`  |          | The type of the property value (`string`, `integer`, or `decimal`)
 

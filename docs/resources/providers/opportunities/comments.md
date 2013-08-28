@@ -1,6 +1,6 @@
 # Resources
 
-## Comments on Providers
+## Comments on Opportunities
 
 ### Attributes
 
@@ -15,23 +15,23 @@ Field            | Type      | Optional | Description
 
 ### Endpoints
 
-#### `GET providers/:resource_id/comments`
+#### `GET providers/:resource_id/opportunities/:opportunity_id/comments`
 
-Returns the list of comments on a provider.
+Returns the list of comments on an opportunity.
 
-#### `POST providers/:resource_id/comments`
+#### `POST providers/:resource_id/opportunities/:opportunity_id/comments`
 
-Creates a new comment on a resource.
+Creates a new comment on an opportunity.
 
-#### `PUT providers/:resource_id/comments/:id`
+#### `PUT providers/:resource_id/opportunities/:opportunity_id/comments/:id`
 
 Updates a comment.
 
-#### `DELETE providers/:resource_id/comments/:id`
+#### `DELETE providers/:resource_id/opportunities/:opportunity_id/comments/:id`
 
 Deletes a comment.
 
 ### Permissions
 
-* Anyone can add a comment on a resource.
+* Anyone can add a comment on an opportunity.
 * Only admins and the API client that submitted the original comment can update or delete it.
