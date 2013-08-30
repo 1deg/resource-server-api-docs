@@ -51,3 +51,7 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
     signed_params = OpenSSL::HMAC.digest('sha256', my_secret_token, param_string)
     signed_date = OpenSSL::HMAC.digest('sha256', signed_params, date)
     signature = Digest::SHA2.hexdigest(signed_date)
+
+### Python
+
+    # TODO this is where a Python code example will go.
