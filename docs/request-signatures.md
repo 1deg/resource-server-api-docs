@@ -55,3 +55,8 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
 ### Python
 
     # TODO this is where a Python code example will go.
+    final_signature = Digest::SHA2.hexdigest(signed_date)
+
+#### PHP
+
+    // TODO: This is where I'll put a PHP code example.
