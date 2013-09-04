@@ -32,6 +32,28 @@ Updates a specific API client.
 
 Deletes a specific API client.
 
+#### `PUT clients/:id/password`
+
+This sets the admin UI password for the client. A `password` parameter (`string`) is required, which is the unencrypted password.
+
+#### `PUT clients/:id/authenticate`
+
+This request returns whether or not the client is authenticated to use the admin UI. A `password` parameter (`string`) is required, which is the client's unencrypted password.
+
+If the password matches the client ID, the response is:
+
+    {
+      "status": "OK",
+      "message": "Client is authenticated."
+    }
+
+Otherwise, the response is:
+
+    {
+      "status": "bad",
+      "message": "Client is not authenticated."
+    }
+
 ### Permissions
 
 * Only admins can manage clients.
