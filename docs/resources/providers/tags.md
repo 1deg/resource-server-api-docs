@@ -4,9 +4,9 @@
 
 ### Attributes
 
- Field  | Type     | Optional | Description                        
+ Field  | Type     | Note     | Description                        
 --------|----------|----------|------------------------------------
- `name` | `string` |          | The name of the tag.               
+ `name` | `string` | required | The name of the tag.               
 
 ### Endpoints
 

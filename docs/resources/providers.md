@@ -4,13 +4,13 @@
 
 ### Attributes
 
-Field          | Type         | Optional | Description                                  
+Field          | Type         | Note     | Description                                  
 ---------------|--------------|----------|---------------------------------------
-`id`           | `integer`    |          | Unique resource ID.
-`name`         | `string`     |          | The name of the resource provider.
-`website`      | `string`     | yes      | The URL of the resource provider's website.
-`description`  | `text`       | yes      | The description of the resource provider.
-`updated_at`   | `string`     | yes      | URL of the resource's profile photo or logo.
+`id`           | `integer`    | auto     | Unique resource ID.
+`name`         | `string`     | required | The name of the resource provider.
+`website`      | `string`     |          | The URL of the resource provider's website.
+`description`  | `text`       |          | The description of the resource provider.
+`updated_at`   | `string`     |          | The timestamp of the last time the resource was updated.
 
 ### Endpoints
 

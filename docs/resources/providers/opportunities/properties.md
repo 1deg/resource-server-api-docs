@@ -4,11 +4,7 @@
 
 ### Attributes
 
-Field           | Type     | Optional | Description                        
-----------------|----------|----------|-----------------------------------
-`name`          | `string` |          | The name of the property.          
-`value_type`    | `string` |          | The value type of the property.    
-`value`         | `string` |          | The value of the property.         
+[See Property attributes here.](/docs/resources/providers/properties.md)
 
 ### Endpoints
 

@@ -4,11 +4,11 @@
 
 ### Attributes
 
-Field        | Type      | Optional | Description                        
+Field        | Type      | Note     | Description                        
 -------------|-----------|----------|----------------------------------------
-`id`         | `integer` |          | The unique ID of the rating type.
-`name`       | `string`  |          | The name of the rating type.
-`value_type` | `string`  |          | The type of the rating value (`string`, `integer`, or `decimal`)
+`id`         | `integer` | auto     | The unique ID of the rating type.
+`name`       | `string`  | required | The name of the rating type.
+`value_type` | `string`  | required | The type of the rating value (`string`, `integer`, or `decimal`)
 
 ### Endpoints
 

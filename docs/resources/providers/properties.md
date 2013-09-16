@@ -4,11 +4,11 @@
 
 ### Attributes
 
-Field           | Type     | Optional | Description                        
+Field           | Type     | Note     | Description                        
 ----------------|----------|----------|-----------------------------------
-`name`          | `string` |          | The name of the property.          
-`value_type`    | `string` |          | The value type of the property.    
-`value`         | `string` |          | The value of the property.         
+`name`          | `string` | required | The name of the property.          
+`value_type`    | `string` | required | The value type of the property.    
+`value`         | `string` | required | The value of the property.         
 
 ### Endpoints
 

@@ -6,9 +6,9 @@
 
 Field        | Type        | Optional | Description              
 -------------|-------------|----------|-------------------------
-`id`         | `integer`   |          | The unique API client ID.
-`name`       | `string`    |          | The name of the API client.
-`is_admin`   | `boolean`   |          | Whether or not the API client is an admin.
+`id`         | `integer`   | auto     | The unique API client ID.
+`name`       | `string`    | required | The name of the API client.
+`is_admin`   | `boolean`   |          | Whether or not the API client is an admin. Default is `false`.
 
 ### Endpoints
 

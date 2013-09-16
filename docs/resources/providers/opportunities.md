@@ -8,13 +8,13 @@ An exmple might be a job training class, which meets at a specific time and plac
 
 ### Attributes
 
-Field            | Type         | Optional | Description
------------------|--------------|-----------|--------------------------------
-`id`             | `integer`    |           | Unique opportunity ID.
-`title`          | `string`     |           | The name of the opportunity.
-`is_appointment` | `boolean`    |           | Whether or not this is an appointment.
-`description`    | `text`       | yes       | The opportunity's description.
-`requirements`   | `text`       | yes       | The opportunity's requirements.
+Field            | Type         | Note     | Description
+-----------------|--------------|----------|--------------------------------
+`id`             | `integer`    | auto     | Unique opportunity ID.
+`title`          | `string`     | required | The name of the opportunity.
+`is_appointment` | `boolean`    |          | Whether or not this is an appointment. Default is `false`.
+`description`    | `text`       |          | The opportunity's description.
+`requirements`   | `text`       |          | The opportunity's requirements.
 
 ### Endpoints
 

@@ -4,12 +4,7 @@
 
 ### Attributes
 
-Field           | Type         | Optional | Description                           
-----------------|--------------|----------|------------------------------------
-`id`            | `integer`    |          | The unique ID of the phone number.
-`digits`        | `string`     |          | The phone number.
-`phone_type`    | `string`     | yes      | The type of phone number such as `fax` or `main`.
-`is_primary`    | `boolean`    |          | Whether or not this is the location's primary phone number.
+[See Phone attributes here.](/docs/resources/providers/locations/phones.md)
 
 ### Endpoints
 

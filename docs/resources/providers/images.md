@@ -4,13 +4,13 @@
 
 ### Attributes
 
-Field        | Type      | Optional | Description                        
+Field        | Type      | Note     | Description                        
 -------------|-----------|----------|------------------------------------
-`id`         | `integer` |          | The unique ID of the image.
+`id`         | `integer` | auto     | The unique ID of the image.
 `url`        | `string ` | auto     | The public URL to the image. This is set automatically upon creation.
-`dimensions` | `string`  |          | The width and height properties of the image in `WxH` format
-`file`       | `File`    |          | The image file.
-`filename`   | `string`  | yes      | The original file name of the file, e.g. `my_picture.jpg`.
+`dimensions` | `string`  | required | The width and height properties of the image in `WxH` format
+`file`       | `File`    | required | The image file.
+`filename`   | `string`  |          | The original file name of the file, e.g. `my_picture.jpg`.
 
 ### Endpoints
 

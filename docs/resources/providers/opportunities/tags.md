@@ -4,9 +4,7 @@
 
 ### Attributes
 
- Field  | Type     | Optional | Description                        
---------|----------|----------|------------------------------------
- `name` | `string` |          | The name of the tag.               
+[See Tag attributes here.](/docs/resources/providers/tags.md)
 
 ### Endpoints
 

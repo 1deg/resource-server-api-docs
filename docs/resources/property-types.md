@@ -4,11 +4,11 @@
 
 ### Attributes
 
-Field        | Type      | Optional | Description                        
+Field        | Type      | Note     | Description                        
 -------------|-----------|----------|----------------------------------------
-`id`         | `integer` |          | The unique ID of the property type.
-`name`       | `string`  |          | The name of the property type.
-`value_type` | `string`  |          | The type of the property value (`string`, `integer`, or `decimal`)
+`id`         | `integer` | auto     | The unique ID of the property type.
+`name`       | `string`  | required | The name of the property type.
+`value_type` | `string`  | required | The type of the property value (`string`, `integer`, or `decimal`)
 
 ### Endpoints
 

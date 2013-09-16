@@ -4,11 +4,7 @@
 
 ### Attributes
 
-Field            | Type      | Optional | Description                        
------------------|-----------|----------|------------------------------------
-`name`           | `string`  |          | The name of the rating.
-`client_user_id` | `string`  |          | The ID of the user who provided this rating. This should be a unique identifier in the client's application. This can only be set upon creation.
-`value`          | `string`  |          | The value of the rating. Generally a number 1-5, but this is a string since a rating value may not be numerical.
+[See Rating attributes here.](/docs/resources/providers/ratings.md)
 
 ### Endpoints
 

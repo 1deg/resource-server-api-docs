@@ -4,13 +4,7 @@
 
 ### Attributes
 
-Field        | Type      | Optional | Description                        
--------------|-----------|----------|------------------------------------
-`id`         | `integer` |          | The unique ID of the image.
-`url`        | `string ` | auto     | The public URL to the image. This is set automatically upon creation.
-`dimensions` | `string`  |          | The width and height properties of the image in `WxH` format
-`file`       | `File`    |          | The image file.
-`filename`   | `string`  | yes      | The original file name of the file, e.g. `my_picture.jpg`.
+[See Image attributes here.](/docs/resources/providers/images.md)
 
 ### Endpoints
 

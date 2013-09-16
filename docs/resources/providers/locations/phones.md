@@ -4,12 +4,12 @@
 
 ### Attributes
 
-Field           | Type         | Optional | Description                           
+Field           | Type         | Note     | Description                           
 ----------------|--------------|----------|------------------------------------
-`id`            | `integer`    |          | The unique ID of the phone number.
-`digits`        | `string`     |          | The phone number.
-`phone_type`    | `string`     | yes      | The type of phone number such as `fax` or `main`.
-`is_primary`    | `boolean`    |          | Whether or not this is the location's primary phone number.
+`id`            | `integer`    | auto     | The unique ID of the phone number.
+`digits`        | `string`     | required | The phone number.
+`phone_type`    | `string`     |          | The type of phone number such as `fax` or `main`.
+`is_primary`    | `boolean`    |          | Whether or not this is the location's primary phone number. Defaults to `false`, unless this is the only phone number.
 
 
 ### Endpoints

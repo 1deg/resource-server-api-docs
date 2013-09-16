@@ -4,11 +4,11 @@
 
 ### Attributes
 
-Field            | Type      | Optional | Description                        
+Field            | Type      | Note     | Description                        
 -----------------|-----------|----------|------------------------------------
-`name`           | `string`  |          | The name of the rating.
-`client_user_id` | `string`  |          | The ID of the user who provided this rating. This should be a unique identifier in the client's application. This can only be set upon creation.
-`value`          | `string`  |          | The value of the rating. Generally a number 1-5, but this is a string since a rating value may not be numerical.
+`name`           | `string`  | required | The name of the rating.
+`client_user_id` | `string`  | required | The ID of the user who provided this rating. This should be a unique identifier in the client's application. This can only be set upon creation.
+`value`          | `string`  | required | The value of the rating. Generally a number 1-5, but this is a string since a rating value may not be numerical.
 
 ### Endpoints
 
