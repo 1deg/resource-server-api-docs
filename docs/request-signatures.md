@@ -51,8 +51,8 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
         param_string << "#{ERB::Util.url_encode(key.to_s)}=#{ERB::Util.url_encode(params[key].to_s)}"
     end
     date = Time.now.utc.iso8601
-    signed_params = OpenSSL::HMAC.digest('sha256', my_secret_token, param_string)
-    signed_date = OpenSSL::HMAC.digest('sha256', signed_params, date)
+    signed_params = OpenSSL::HMAC.hexdigest('sha256', my_secret_token, param_string)
+    signed_date = OpenSSL::HMAC.hexdigest('sha256', signed_params, date)
     signature = Digest::SHA2.hexdigest(signed_date)
 
 ### Python
