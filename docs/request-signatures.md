@@ -37,7 +37,10 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
     require 'openssl'
     require 'erb'
 
+    my_secret_token = "my secret token"
+
     params = {
+        api_key: "my api key"
         resource_id: 3841,
         name: "Existing Resource Provider, Inc."
         website: "http://www.this.isan/example" 
