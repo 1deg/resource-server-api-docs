@@ -55,11 +55,23 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
     signed_date = OpenSSL::HMAC.hexdigest('sha256', signed_params, date)
     signature = Digest::SHA2.hexdigest(signed_date)
 
-### Python
-
-    # TODO this is where a Python code example will go.
-    final_signature = Digest::SHA2.hexdigest(signed_date)
-
 #### PHP
 
-    // TODO: This is where I'll put a PHP code example.
+    $secret = "my secret token";
+
+    $params = array();
+    $params['api_key'] = "my api_key";
+    $params['name'] = "new resource name";
+
+    ksort($params);
+    $param_str = "";
+    foreach($params as $key => $value) {
+        if($param_str != "") {
+          $param_str = $param_str . "&";
+        }
+        $param_str = $param_str . rawurlencode($key) . "=" . rawurlencode($value);
+    }
+
+    $signed_params = hash_hmac('sha256', $param_str, $secret);
+    $signed_date =  hash_hmac('sha256', $date, $signed_params);
+    return hash('sha256', $signed_date);
