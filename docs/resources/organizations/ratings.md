@@ -14,7 +14,7 @@ Field            | Type      | Note     | Description
 
 #### `GET resources/:resource_id/ratings`
 
-Returns the aggregate ratings on a provider as an array (e.g. `[name: value, name2: value2]`).
+Returns the aggregate ratings on a organization as an array (e.g. `[name: value, name2: value2]`).
 
 
 #### `POST resources/:resource_id/ratings`

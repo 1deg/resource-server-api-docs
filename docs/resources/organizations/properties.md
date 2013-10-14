@@ -14,11 +14,11 @@ Field           | Type     | Note     | Description
 
 #### `GET resources/:resource_id/properties`
 
-Returns a list of the properties of a provider.
+Returns a list of the properties of a organization.
 
 #### `POST resources/:resource_id/properties`
 
-Adds a property to a provider.
+Adds a property to a organization.
 
 #### `PUT resources/:resource_id/properties/:id`
 
@@ -26,7 +26,7 @@ Updates the value of a property. The `:id` in this case is the `name` attribute,
 
 #### `DELETE resources/:resource_id/properties/:id`
 
-Deletes a property from a provider. The `:id` in this case is the `name` attribute, but the parameter name is `id`
+Deletes a property from a organization. The `:id` in this case is the `name` attribute, but the parameter name is `id`
 
 ### Permissions
 

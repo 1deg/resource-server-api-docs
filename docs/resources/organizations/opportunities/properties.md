@@ -4,7 +4,7 @@
 
 ### Attributes
 
-[See Property attributes here.](/docs/resources/providers/properties.md)
+[See Property attributes here.](/docs/resources/organizations/properties.md)
 
 ### Endpoints
 

@@ -1,15 +1,15 @@
 # Resources
 
-## Resource Providers ("Resources")
+## Organizations
 
 ### Attributes
 
 Field          | Type         | Note     | Description                                  
 ---------------|--------------|----------|---------------------------------------
 `id`           | `integer`    | auto     | Unique resource ID.
-`name`         | `string`     | required | The name of the resource provider.
-`website`      | `string`     |          | The URL of the resource provider's website.
-`description`  | `text`       |          | The description of the resource provider.
+`name`         | `string`     | required | The name of the organization.
+`website`      | `string`     |          | The URL of the organization's website.
+`description`  | `text`       |          | The description of the organization.
 `updated_at`   | `string`     |          | The timestamp of the last time the resource was updated.
 
 ### Endpoints
@@ -26,8 +26,8 @@ Creates a new resource.
 
 Returns a specific resource, along with the following nested objects:
 
-- [`properties`](/docs/providers/properties.md)
-- [`tags`](/docs/providers/tags.md)
+- [`properties`](/docs/organizations/properties.md)
+- [`tags`](/docs/organizations/tags.md)
 
 #### `PUT /v1/resources/:id`
 

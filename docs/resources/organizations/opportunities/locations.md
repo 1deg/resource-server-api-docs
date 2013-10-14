@@ -4,7 +4,7 @@
 
 ### Attributes
 
-[See Location attributes here.](/docs/resources/providers/locations.md)
+[See Location attributes here.](/docs/resources/organizations/locations.md)
 
 ### Endpoints
 

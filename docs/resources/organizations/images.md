@@ -16,16 +16,16 @@ Field        | Type      | Note     | Description
 
 #### `GET resources/:resource_id/images`
 
-Returns a list of the images on a provider.
+Returns a list of the images on a organization.
 
 #### `POST resources/:resource_id/images`
 
-Uploads an image to a resource provider. Only one image of the same dimensions can be uploaded for a given resource.
+Uploads an image to a organization. Only one image of the same dimensions can be uploaded for a given resource.
 
 #### `DELETE resources/:resource_id/images/:id`
 
-Deletes an image from a provider.
+Deletes an image from a organization.
 
 ### Permissions
 
-* Only the owner of the associated resource provider and admins can manage images.
+* Only the owner of the associated organization and admins can manage images.

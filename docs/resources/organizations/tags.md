@@ -12,17 +12,17 @@
 
 #### `GET resources/:resource_id/tags`
 
-Returns a list of the tags on a provider.
+Returns a list of the tags on a organization.
 
 #### `POST resources/:resource_id/tags`
 
-Adds a tag to a provider. Anyone can add a tag to a resource.
+Adds a tag to a organization. Anyone can add a tag to a resource.
 
 #### `DELETE resources/:resource_id/tags/:id`
 
-Deletes a tag from a provider. The `:id` in this case is the `name` attribute, but the parameter name is `id`
+Deletes a tag from a organization. The `:id` in this case is the `name` attribute, but the parameter name is `id`
 
 ### Permissions
 
 * Anyone can add a tag.
-* Only the owner of the associated resource provider and admins can delete a tag.
+* Only the owner of the associated organization and admins can delete a tag.

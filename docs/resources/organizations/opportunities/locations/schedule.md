@@ -1,12 +1,12 @@
 # Resource
 
-## Schedule on Opportunities
+## Schedule on Locations on Opportunities
 
-Only one schedule can exist on an opportunity.
+Only one schedule can exist on a location.
 
 ### Attributes
 
-[See Schedule attributes here.](/docs/resources/providers/schedules.md)
+[See Location attributes here.](/docs/resources/organizations/locations/schedule.md)
 
 ### Endpoints
 

@@ -2,7 +2,7 @@
 
 ## Opportunities on Service Providers
 
-An opportunity represents an event, appointment, resource, or other offering that the provider makes available. Opportunities are specific, that is to say, they represent a discrete item that can be added to an end user's list of tasks.
+An opportunity represents an event, appointment, resource, or other offering that the organization makes available. Opportunities are specific, that is to say, they represent a discrete item that can be added to an end user's list of tasks.
 
 An exmple might be a job training class, which meets at a specific time and place. An implementation of a task list might allow the user to add this training class to her schedule.
 
@@ -20,15 +20,15 @@ Field            | Type         | Note     | Description
 
 #### `GET resources/:resource_id/opportunities`
 
-Returns the list of opportunities on a provider with the following nested resources:
+Returns the list of opportunities on a organization with the following nested resources:
 
-- [`properties`](/docs/providers/opportunities/properties.md)
-- [`tags`](/docs/providers/opportunities/tags.md)
-- [`locations`](/docs/providers/opportunities/locations.md)
+- [`properties`](/docs/organizations/opportunities/properties.md)
+- [`tags`](/docs/organizations/opportunities/tags.md)
+- [`locations`](/docs/organizations/opportunities/locations.md)
 
 #### `POST resources/:resource_id/opportunities`
 
-Creates a new opportunity on a provider.
+Creates a new opportunity on a organization.
 
 #### `PUT resources/:resource_id/opportunities/:id`
 

@@ -4,7 +4,7 @@
 
 ### Attributes
 
-[See Tag attributes here.](/docs/resources/providers/tags.md)
+[See Tag attributes here.](/docs/resources/organizations/tags.md)
 
 ### Endpoints
 
@@ -23,4 +23,4 @@ Deletes a tag from an opportunity. The `:id` in this case is the `name` attribut
 ### Permissions
 
 * Anyone can add a tag.
-* Only the owner of the associated resource provider and admins can delete a tag.
+* Only the owner of the associated organization and admins can delete a tag.

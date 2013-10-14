@@ -4,7 +4,7 @@
 
 ### Attributes
 
-[See Phone attributes here.](/docs/resources/providers/locations/phones.md)
+[See Phone attributes here.](/docs/resources/organizations/locations/phones.md)
 
 ### Endpoints
 

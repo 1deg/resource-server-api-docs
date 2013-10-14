@@ -2,7 +2,7 @@
 
 ## Base URL
 
-All calls are made to the base URL, along with the specific provider path:
+All calls are made to the base URL, along with the specific resource path:
 
     https://xxxxx.xxxx.org/v1/
 
@@ -28,7 +28,7 @@ This is the request signature that authenticates the sender. [Learn about how to
 
 ## Standard Parameters
 
-Similar request types use the same standard parameters. E.g. Requests to list providers use the same filter paramters.
+Similar request types use the same standard parameters. E.g. Requests to list resources use the same filter paramters.
 
 ### Timestamps
 

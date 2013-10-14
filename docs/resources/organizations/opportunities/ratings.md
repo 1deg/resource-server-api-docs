@@ -4,7 +4,7 @@
 
 ### Attributes
 
-[See Rating attributes here.](/docs/resources/providers/ratings.md)
+[See Rating attributes here.](/docs/resources/organizations/ratings.md)
 
 ### Endpoints
 
