@@ -18,7 +18,7 @@ Field            | Type         | Note     | Description
 
 ### Endpoints
 
-#### `GET resources/:resource_id/opportunities`
+#### `GET /v1/organizations/:organization_id/opportunities`
 
 Returns the list of opportunities on a organization with the following nested resources:
 
@@ -26,14 +26,14 @@ Returns the list of opportunities on a organization with the following nested re
 - [`tags`](/docs/organizations/opportunities/tags.md)
 - [`locations`](/docs/organizations/opportunities/locations.md)
 
-#### `POST resources/:resource_id/opportunities`
+#### `POST /v1/organizations/:organization_id/opportunities`
 
 Creates a new opportunity on a organization.
 
-#### `PUT resources/:resource_id/opportunities/:id`
+#### `PUT /v1/organizations/:organization_id/opportunities/:id`
 
 Updates an opportunity.
 
-#### `DELETE resources/:resource_id/opportunities/:id`
+#### `DELETE /v1/organizations/:organization_id/opportunities/:id`
 
 Deletes an opportunity.

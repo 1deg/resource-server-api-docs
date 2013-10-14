@@ -32,14 +32,14 @@ All hours `string` fields are of the format:
 
 ### Endpoints
 
-#### `POST resources/:resource_id/locations/:id/schedule`
+#### `POST /v1/organizations/:organization_id/locations/:id/schedule`
 
 Creates a schedule on a location. Only one schedule can exist for a location.
 
-#### `PUT resources/:resource_id/locations/:id/schedule`
+#### `PUT /v1/organizations/:organization_id/locations/:id/schedule`
 
 Updates a location's schedule.
 
-#### `DELETE resources/:resource_id/locations/:id/schedule`
+#### `DELETE /v1/organizations/:organization_id/locations/:id/schedule`
 
 Deletes the location's schedule.

@@ -12,19 +12,19 @@ Field           | Type     | Note     | Description
 
 ### Endpoints
 
-#### `GET resources/:resource_id/properties`
+#### `GET /v1/organizations/:organization_id/properties`
 
 Returns a list of the properties of a organization.
 
-#### `POST resources/:resource_id/properties`
+#### `POST /v1/organizations/:organization_id/properties`
 
 Adds a property to a organization.
 
-#### `PUT resources/:resource_id/properties/:id`
+#### `PUT /v1/organizations/:organization_id/properties/:id`
 
 Updates the value of a property. The `:id` in this case is the `name` attribute, but the parameter name is `id`
 
-#### `DELETE resources/:resource_id/properties/:id`
+#### `DELETE /v1/organizations/:organization_id/properties/:id`
 
 Deletes a property from a organization. The `:id` in this case is the `name` attribute, but the parameter name is `id`
 

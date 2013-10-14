@@ -14,18 +14,18 @@ Field           | Type         | Note     | Description
 
 ### Endpoints
 
-#### `GET resources/:resource_id/locations/:id/phones`
+#### `GET /v1/organizations/:organization_id/locations/:id/phones`
 
 Returns all phone numbers on a location.
 
-#### `POST resources/:resource_id/locations/:location_id/phones`
+#### `POST /v1/organizations/:organization_id/locations/:location_id/phones`
 
 Creates a phone number on a location.
 
-#### `PUT resources/:resource_id/locations/:location_id/phones/:id`
+#### `PUT /v1/organizations/:organization_id/locations/:location_id/phones/:id`
 
 Updates a location's phone number.
 
-#### `DELETE resources/:resource_id/locations/:location_id/phones/:id`
+#### `DELETE /v1/organizations/:organization_id/locations/:location_id/phones/:id`
 
 Deletes a location's phone number.

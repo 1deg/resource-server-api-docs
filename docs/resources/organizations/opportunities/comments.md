@@ -8,19 +8,19 @@
 
 ### Endpoints
 
-#### `GET organizations/:resource_id/opportunities/:opportunity_id/comments`
+#### `GET /v1/organizations/:organization_id/opportunities/:opportunity_id/comments`
 
 Returns the list of comments on an opportunity.
 
-#### `POST organizations/:resource_id/opportunities/:opportunity_id/comments`
+#### `POST /v1/organizations/:organization_id/opportunities/:opportunity_id/comments`
 
 Creates a new comment on an opportunity.
 
-#### `PUT organizations/:resource_id/opportunities/:opportunity_id/comments/:id`
+#### `PUT /v1/organizations/:organization_id/opportunities/:opportunity_id/comments/:id`
 
 Updates a comment.
 
-#### `DELETE organizations/:resource_id/opportunities/:opportunity_id/comments/:id`
+#### `DELETE /v1/organizations/:organization_id/opportunities/:opportunity_id/comments/:id`
 
 Deletes a comment.
 

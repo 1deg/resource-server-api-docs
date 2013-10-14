@@ -8,26 +8,26 @@
 
 ### Endpoints
 
-#### `GET resources/:resource_id/opportunities/:opportunity_id/locations`
+#### `GET /v1/organizations/:organization_id/opportunities/:opportunity_id/locations`
 
 Returns the locations of an opportunity.
 
-#### `POST resources/:resource_id/opportunities/:opportunity_id/locations`
+#### `POST /v1/organizations/:organization_id/opportunities/:opportunity_id/locations`
 
 Creates a new location of an opportunity.
 
-#### `GET resources/:resource_id/opportunities/:opportunity_id/locations/:id`
+#### `GET /v1/organizations/:organization_id/opportunities/:opportunity_id/locations/:id`
 
 Returns a specific location with the following nested resources:
 
 - [`phones`](locations/phones.md)
 - [`schedule`](locations/schedule.md)
 
-#### `PUT resources/:resource_id/opportunities/:opportunity_id/locations/:id`
+#### `PUT /v1/organizations/:organization_id/opportunities/:opportunity_id/locations/:id`
 
 Updates a location of an opportunity.
 
-#### `DELETE resources/:resource_id/opportunities/:opportunity_id/locations/:id`
+#### `DELETE /v1/organizations/:organization_id/opportunities/:opportunity_id/locations/:id`
 
 Deletes a location of an opportunity.
 

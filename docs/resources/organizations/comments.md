@@ -15,19 +15,19 @@ Field            | Type      | Note     | Description
 
 ### Endpoints
 
-#### `GET organizations/:resource_id/comments`
+#### `GET /v1/organizations/:organization_id/comments`
 
 Returns the list of comments on a organization.
 
-#### `POST organizations/:resource_id/comments`
+#### `POST /v1/organizations/:organization_id/comments`
 
 Creates a new comment on a resource.
 
-#### `PUT organizations/:resource_id/comments/:id`
+#### `PUT /v1/organizations/:organization_id/comments/:id`
 
 Updates a comment.
 
-#### `DELETE organizations/:resource_id/comments/:id`
+#### `DELETE /v1/organizations/:organization_id/comments/:id`
 
 Deletes a comment.
 

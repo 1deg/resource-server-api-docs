@@ -12,20 +12,20 @@ Field            | Type      | Note     | Description
 
 ### Endpoints
 
-#### `GET resources/:resource_id/ratings`
+#### `GET /v1/organizations/:organization_id/ratings`
 
 Returns the aggregate ratings on a organization as an array (e.g. `[name: value, name2: value2]`).
 
 
-#### `POST resources/:resource_id/ratings`
+#### `POST /v1/organizations/:organization_id/ratings`
 
 Creates a new rating.
 
-#### `PUT resources/:resource_id/ratings/:id`
+#### `PUT /v1/organizations/:organization_id/ratings/:id`
 
 Updates a rating. The `:id` in this case is the `name` attribute, but the parameter name is `id`
 
-#### `DELETE resources/:resource_id/ratings/:id`
+#### `DELETE /v1/organizations/:organization_id/ratings/:id`
 
 Deletes a specific rating. The `:id` in this case is the `name` attribute, but the parameter name is `id`
 

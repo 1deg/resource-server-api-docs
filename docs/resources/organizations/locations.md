@@ -19,26 +19,26 @@ Field          | Type         | Note      | Description
 
 ### Endpoints
 
-#### `GET resources/:resource_id/locations`
+#### `GET /v1/organizations/:organization_id/locations`
 
 Returns the locations of a resource.
 
-#### `POST resources/:resource_id/locations`
+#### `POST /v1/organizations/:organization_id/locations`
 
 Creates a new location of a resource.
 
-#### `GET resources/:resource_id/locations/:id`
+#### `GET /v1/organizations/:organization_id/locations/:id`
 
 Returns a specific location with the following nested resources:
 
 - [`phones`](locations/phones.md)
 - [`schedule`](locations/schedule.md)
 
-#### `PUT resources/:resource_id/locations/:id`
+#### `PUT /v1/organizations/:organization_id/locations/:id`
 
 Updates a location of a resource.
 
-#### `DELETE resources/:resource_id/locations/:id`
+#### `DELETE /v1/organizations/:organization_id/locations/:id`
 
 Deletes a location of a resource.
 

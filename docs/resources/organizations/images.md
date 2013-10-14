@@ -14,15 +14,15 @@ Field        | Type      | Note     | Description
 
 ### Endpoints
 
-#### `GET resources/:resource_id/images`
+#### `GET /v1/organizations/:organization_id/images`
 
 Returns a list of the images on a organization.
 
-#### `POST resources/:resource_id/images`
+#### `POST /v1/organizations/:organization_id/images`
 
 Uploads an image to a organization. Only one image of the same dimensions can be uploaded for a given resource.
 
-#### `DELETE resources/:resource_id/images/:id`
+#### `DELETE /v1/organizations/:organization_id/images/:id`
 
 Deletes an image from a organization.
 
