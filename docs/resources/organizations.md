@@ -14,26 +14,26 @@ Field          | Type         | Note     | Description
 
 ### Endpoints
 
-#### `GET /v1/resources`
+#### `GET /v1/organizations`
 
 Returns a list of resource. Standard pagination parameters apply.
 
-#### `POST /v1/resources`
+#### `POST /v1/organizations`
 
 Creates a new resource.
 
-#### `GET /v1/resources/:id`
+#### `GET /v1/organizations/:id`
 
 Returns a specific resource, along with the following nested objects:
 
 - [`properties`](/docs/organizations/properties.md)
 - [`tags`](/docs/organizations/tags.md)
 
-#### `PUT /v1/resources/:id`
+#### `PUT /v1/organizations/:id`
 
 Updates a resource.
 
-#### `DELETE /v1/resources/:id`
+#### `DELETE /v1/organizations/:id`
 
 Deletes a resource.
 
