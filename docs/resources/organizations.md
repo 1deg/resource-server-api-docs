@@ -26,8 +26,8 @@ Creates a new resource.
 
 Returns a specific resource, along with the following nested objects:
 
-- [`properties`](/docs/organizations/properties.md)
-- [`tags`](/docs/organizations/tags.md)
+- [`properties`](/docs/resources/organizations/properties.md)
+- [`tags`](/docs/resources/organizations/tags.md)
 
 #### `PUT /v1/organizations/:id`
 

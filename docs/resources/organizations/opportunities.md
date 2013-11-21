@@ -22,9 +22,9 @@ Field            | Type         | Note     | Description
 
 Returns the list of opportunities on a organization with the following nested resources:
 
-- [`properties`](/docs/organizations/opportunities/properties.md)
-- [`tags`](/docs/organizations/opportunities/tags.md)
-- [`locations`](/docs/organizations/opportunities/locations.md)
+- [`properties`](/docs/resources/organizations/opportunities/properties.md)
+- [`tags`](/docs/resources/organizations/opportunities/tags.md)
+- [`locations`](/docs/resources/organizations/opportunities/locations.md)
 
 #### `POST /v1/organizations/:organization_id/opportunities`
 
