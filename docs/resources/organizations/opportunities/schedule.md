@@ -6,7 +6,7 @@ Only one schedule can exist on an opportunity.
 
 ### Attributes
 
-[See Schedule attributes here.](/docs/resources/organizations/schedules.md)
+[See Schedule attributes here.](/docs/resources/organizations/locations/schedules.md)
 
 ### Endpoints
 
