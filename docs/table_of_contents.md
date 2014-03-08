@@ -9,6 +9,7 @@
 - [Clients](/docs/resources/clients.md)
 - [Property Types](/docs/resources/property-types.md)
 - [Rating Types](/docs/resources/rating-types.md)
+- [Guides](/docs/resources/guides.md)
 - [Organizations](/docs/resources/organizations.md)
   * [Comments](/docs/resources/organizations/comments.md)
   * [Images](/docs/resources/organizations/opportunities/images.md)
