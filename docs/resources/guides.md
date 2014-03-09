@@ -29,6 +29,12 @@ Creates a new guide.
 
 Returns a specific guide.
 
+#### `GET /v1/guides/:id/opportunities`
+
+Returns the opportunity objects that are collected by this guide.
+See [Opportunities](/docs/resources/organizations/opportunities.md) for
+more information on opportunity objects.
+
 #### `PUT /v1/guides/:id`
 
 Updates a guide.
