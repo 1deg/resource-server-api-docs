@@ -266,4 +266,4 @@ Example:
           [...etc...]
       ]
     }
-See also [Pagination Parameters](/docs/pagination.md)
+See also [Pagination Parameters](/docs/common/pagination.md)
