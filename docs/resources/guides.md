@@ -6,7 +6,7 @@
 
 Field             | Type              | Note        | Description                                  
 ------------------|-------------------|-------------|---------------------------------------
-`id`              | `integer`         | auto        | Unique resource ID.
+`id`              | `integer`         | read-only   | Unique resource ID.
 `title`           | `string`          | required    | The name of the guide.
 `description`     | `string`          |             | The description of what the guide is about.
 `location`        | `text`            |             | The area for which the guide is applicable.
@@ -32,7 +32,7 @@ Returns a specific guide.
 #### `GET /v1/guides/:id/opportunities`
 
 Returns the opportunity objects that are collected by this guide.
-See [Opportunities](/docs/resources/organizations/opportunities.md) for
+See [Opportunities](/opportunities.md) for
 more information on opportunity objects.
 
 #### `PUT /v1/guides/:id`
@@ -46,5 +46,5 @@ Deletes a guide.
 ### Permissions
 
 * Anyone can create a guide.
-* Only admins and the original resource owner can update a guide.
+* Only admins and the original creator can update a guide.
 * Only admins can delete a guide.

@@ -1,14 +1,14 @@
-# Resources
+## Resources
 
-## Clients
+# Clients
 
 ### Attributes
 
-Field        | Type        | Optional | Description              
--------------|-------------|----------|-------------------------
-`id`         | `integer`   | auto     | The unique API client ID.
-`name`       | `string`    | required | The name of the API client.
-`is_admin`   | `boolean`   |          | Whether or not the API client is an admin. Default is `false`.
+Field        | Type        | Note      | Description              
+-------------|-------------|-----------|-------------------------
+`id`         | `integer`   | read-only | The unique API client ID.
+`name`       | `string`    | required  | The name of the API client.
+`is_admin`   | `boolean`   |           | Whether or not the API client is an admin. Default is `false`.
 
 ### Endpoints
 

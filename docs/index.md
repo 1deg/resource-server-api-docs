@@ -1,7 +1,6 @@
 # Documentation
 
 ## Overview
-The following diagram illustrates the overall data structure:
 
 ![Data Structure](/files/data_structure.png "Data Structure")
 

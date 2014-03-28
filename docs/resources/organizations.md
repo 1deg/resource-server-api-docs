@@ -1,22 +1,25 @@
-# Resources
+## Resources
 
-## Organizations
+# Organizations
 
 ### Attributes
 
-Field          | Type         | Note     | Description                                  
----------------|--------------|----------|---------------------------------------
-`id`           | `integer`    | auto     | Unique organization ID.
-`name`         | `string`     | required | The name of the organization.
-`website`      | `string`     |          | The URL of the organization's website.
-`description`  | `text`       |          | The description of the organization.
-`updated_at`   | `string`     |          | The timestamp of the last time the organization was updated.
+Field               | Type         | Note       | Description                                  
+--------------------|--------------|------------|---------------------------------------
+`id`                | `integer`    | read-only  | Unique organization ID.
+`slug`              | `string`     | read-only  | Unique organization URL slug.
+`name`              | `string`     | required   | The name of the organization.
+`website`           | `string`     |            | The URL of the organization's website.
+`description`       | `text`       |            | The description of the organization.
+`updated_at`        | `string`     | read-only  | The timestamp of the last time the organization was updated.
+`opportunity_count` | `integer`    | read-only  | The number of opportunities the organization provides.
+`rating`            | `decimal`    | read-only  | The average star rating given for this opportunity by users, aggregated across all API clients.
 
 ### Endpoints
 
 #### `GET /v1/organizations`
 
-Returns a list of organization. Standard pagination parameters apply.
+Returns a list of organization. Standard [pagination](/docs/common/pagination.md) and [query](/docs/common/query.md) parameters apply.
 
 #### `POST /v1/organizations`
 
@@ -26,11 +29,11 @@ Creates a new organization.
 
 Returns a specific organization, along with the following nested objects:
 
-- [`properties`](/docs/resources/organizations/properties.md)
-- [`tags`](/docs/resources/organizations/tags.md)
-- [`locations`]()
-- [`phones`]()
-- top 5 opportunity [`comments`](/docs/resources/organizations/opportunities/comments.md)
+- [`properties`](properties.md)
+- [`tags`](tags.md)
+- [`locations`](locations.md)
+- [`phones`](phones.md)
+- top 5 opportunity comments [`comments`](comments.md)
 
 Example:
 

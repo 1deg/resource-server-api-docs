@@ -4,11 +4,15 @@
 
 All calls are made to the base URL, along with the specific resource path:
 
-    https://xxxxx.xxxx.org/v1/
+    https://data.1deg.org/v1/
 
 ## Required Parameter
 
 All requests require an API key parameter `api_key`.
+
+## Common Parameters
+
+Many requests share parameters. Most resource collections support [pagination parameters](/docs/common/pagination.md), and certain resource collections (`Organizations` and `Opportunities`) support [query parameters](/docs/common/query.md).
 
 ## Request Signatures
 
@@ -26,20 +30,8 @@ Example header:
 
 This is the request signature that authenticates the sender. [Learn about how to build this request signature here.](request-signatures.md)
 
-## Standard Parameters
-
-Similar request types use the same standard parameters. E.g. Requests to list resources use the same filter paramters.
-
 ### Timestamps
 
-All timestamps should be in ISO 8601 format:
+All timestamps should be in ISO 8601 format at UTC:
 
     YYYY-MM-DDTHH:mm:ss
-
-### Pagination parameters
-
- Parameter    | Type      | Description                    
---------------|-----------|--------------------------------
- `page`       | `integer` | The offset.                    
- `per_page`   | `integer` | The number of items to return. 
- `order`      | `string`  | The sort order by which items will be returned. Common values are `name_asc` and `name_desc`. Defaults to `name_asc`.
