@@ -25,7 +25,7 @@ Parameter       | Type         | Description                                    
 
 Parameter     | Type                                | Description    | Example
 --------------|-------------------------------------|-----------------------------------|----------
-`attributes`  | Object of attribute key-value pairs | The attributes of the record type to filter the query by. | `attributes[name]=Delancey+Street+Foundation`
+`attributes`  | Object of attribute key-value pairs | The attributes of the record type to filter the query by. The results are restricted to those records that match all provided attributes. | `attributes[name]=Delancey+Street+Foundation`
 
 #### Related Records Query
 
@@ -53,6 +53,7 @@ Parameter      | Type            | Description                          | Exampl
 `distance`    | `decimal`       | The radius in kilometers around the coordinates specified in which to search. | `query[distance]=40.2336`
 `order`       | `string`        | The ordering in which to return results. Options are: `best`, `distance`, `popularity`, `newest`. | `query[order]=best`
 `properties`  | Object of property key-value pairs | Specific properties can be specified to narrow search results by only records that match the given property key-value paris | `query[properties][lang-spanish]=true&query[properties][cost-free]=true`
+`match`       | `string`        | Whether the results should match all attributes provided, or if the results should just be ordered by closeness to them. Possible values are `any`, which orders the results that match any given property, and `properties`, which ensures all results adhere to the properties given. | `match=properties`
 
 Example:
 
