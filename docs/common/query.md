@@ -45,9 +45,10 @@ Parameter       | Type                         | Description | Example
 
 The `query` object is comprised of the following parameters:
 
-Parameter      | Type            | Description                          | Example
---------------|-----------------|---------------------------------------|----------------------------
-`text`        | `string`        | The search keywords. Surround the term in quotes (" ") for exact phrase matching. | `query[text]=health+clinic`
+Parameter     | Type            | Description                          | Example
+--------------|-----------------|--------------------------------------|----------------------------
+`text`        | `string`        | Keywords to use for full text searching . Surround the term in quotes (" ") for exact phrase matching. | `query[text]=health+clinic`
+`attributes`  | Object          | Attributes matching, see _Attributes object_ below. | See below.
 `lat`         | `decimal`       | The latitude around which to search.  | `query[lat]=37.7823`
 `long`        | `decimal`       | The longitude around which to search. | `query[long]=122.46`
 `distance`    | `decimal`       | The radius in kilometers around the coordinates specified in which to search. | `query[distance]=40.2336`
@@ -59,212 +60,49 @@ Example:
 
     GET /v1/opportunities?api_key=API_KEY&query[text]=jobs&query[order]=relevance&query[distance]=40.2336&query[lat]=37.7822891&query[long]=-122.463708&query[properties][for-teens]=true&query[properties][lang-spanish]=true&page=1&per_page=10
 
+##### Attributes object
 
-    {
-      "paging": {
-          "total_count": 3,
-          "per_page": 10,
-          "current_page": 1,
-          "total_pages": 1,
-          "previous_page": null,
-          "next_page": null,
-          "first_page": "http://localhost:3002/v1/opportunities?api_key=f31419b01a7b0131a22a10ddb1da427e&order=id_asc&page=1&per_page=10",
-          "last_page": "http://localhost:3002/v1/opportunities?api_key=f31419b01a7b0131a22a10ddb1da427e&order=id_asc&page=1&per_page=10"
-      },
-      "opportunities": [
-          {
-              "id": 61,
-              "title": "Get two years or more of live-in education and job training",
-              "description": "If you've hit bottom (drug- or alcohol use, violence, or homelessness) Delancey Street will help you turn your life around by training you for future employment. Residents get useful job skills that can be applied to future employment. There is a minimum stay of two years.",
-              "requirements": "At any time, 24 hours a day, 7 days a week, you visit Delancey Street and get interviewed for admission during your visit. You must be willing to commit to remaining with Delancey for two years. Read more information here: http://www.delanceystreetfoundation.org/admission.php",
-              "slug": "get-two-years-or-more-of-live-in-education-and-job-training",
-              "is_appointment": false,
-              "tags": [
-                  "alcohol",
-                  "drugs",
-                  "health",
-                  "shelter",
-                  "housing",
-                  "skills-training",
-                  "learning",
-                  "career-counseling",
-                  "money"
-              ],
-              "schedule": {
-                  "monday_start": "",
-                  "monday_end": "",
-                  "tuesday_start": "",
-                  "tuesday_end": "",
-                  "wednesday_start": "",
-                  "wednesday_end": "",
-                  "thursday_start": "",
-                  "thursday_end": "",
-                  "friday_start": "",
-                  "friday_end": "",
-                  "saturday_start": "",
-                  "saturday_end": "",
-                  "sunday_start": "",
-                  "sunday_end": "",
-                  "notes": ""
-              },
-              "properties": {
-                  "lang-english": "true",
-                  "lang-spanish": "true",
-                  "for-adults": "true",
-                  "for-young-adults": "true",
-                  "for-teens": "true",
-                  "geo-neighborhood": "SoMa, South Beach",
-                  "cost-fees": "Free",
-                  "elig-description": "No hard and fast criteria exist other than a strong motivation to change one’s lifestyle, an ability to interact in an active fast paced environment, and reasonably good health."
-              },
-              "locations": [
-                  {
-                      "id": 34,
-                      "name": "Delancey Street San Francisco",
-                      "address": "600 Embarcadero ",
-                      "unit": "",
-                      "city": "San Francisco",
-                      "state": "CA",
-                      "zip_code": "94107",
-                      "lat": 37.7844,
-                      "long": -122.388,
-                      "is_primary": true,
-                      "phones": [
-                          {
-                              "id": 72,
-                              "digits": "415-512-5104",
-                              "phone_type": "",
-                              "is_primary": true
-                          }
-                      ],
-                      "schedule": {
-                          "monday_start": "",
-                          "monday_end": "",
-                          "tuesday_start": "",
-                          "tuesday_end": "",
-                          "wednesday_start": "",
-                          "wednesday_end": "",
-                          "thursday_start": "",
-                          "thursday_end": "",
-                          "friday_start": "",
-                          "friday_end": "",
-                          "saturday_start": "",
-                          "saturday_end": "",
-                          "sunday_start": "",
-                          "sunday_end": "",
-                          "notes": "Open 24 hours per day/7 days per week."
-                      }
-                  }
-              ],
-              "phones": [
-                  {
-                      "id": 73,
-                      "digits": "415-512-5104",
-                      "phone_type": "",
-                      "is_primary": true
-                  }
-              ],
-              "rating": 0,
-              "organization": {
-                  "id": 25,
-                  "name": "Delancey Street Foundation",
-                  "slug": "delancey-street-foundation",
-                  "opportunity_count": 1
-              }
-          },
-          {
-              "id": 162,
-              "title": "Apply for a program to help high school students get into and graduate from college",
-              "description": "Juma students get support through the college selection and application process, while also receiving a part-time job in one of Juma's concession business. Jobs start with a skills-training program, and the program provides personal coaching from Juma staff, and perks like college tours, financial guidance, tutoring and SAT prep.",
-              "requirements": "Apply by downloading the application here: http://www.jumaventures.org/students/apply-now. Juma recruits students in February through March of each year.",
-              "slug": "apply-for-a-program-to-help-high-school-students-get-into-and-graduate-from-college",
-              "is_appointment": false,
-              "tags": [
-                  "money",
-                  "learning",
-                  "college",
-                  "skills-training"
-              ],
-              "schedule": {
-                  "monday_start": "",
-                  "monday_end": "",
-                  "tuesday_start": "",
-                  "tuesday_end": "",
-                  "wednesday_start": "",
-                  "wednesday_end": "",
-                  "thursday_start": "",
-                  "thursday_end": "",
-                  "friday_start": "",
-                  "friday_end": "",
-                  "saturday_start": "",
-                  "saturday_end": "",
-                  "sunday_start": "",
-                  "sunday_end": "",
-                  "notes": ""
-              },
-              "properties": {
-                  "lang-spanish": "true",
-                  "for-teens": "true",
-                  "for-young-adults": "true",
-                  "elig-age-or-over": "13",
-                  "action-signup-url": "http://www.jumaventures.org/students/apply-now",
-                  "action-signup-website-description": "Download application on their website"
-              },
-              "locations": [
-                  {
-                      "id": 85,
-                      "name": "Main Office",
-                      "address": "131 Steuart Street",
-                      "unit": "Suite 201",
-                      "city": "San Francisco",
-                      "state": "CA",
-                      "zip_code": "94105",
-                      "lat": 37.7929,
-                      "long": -122.393,
-                      "is_primary": true,
-                      "phones": [
-                          {
-                              "id": 182,
-                              "digits": "415.371.0727",
-                              "phone_type": "Main Office",
-                              "is_primary": true
-                          },
-                          {
-                              "id": 183,
-                              "digits": "415.371.1634",
-                              "phone_type": "Fax",
-                              "is_primary": false
-                          }
-                      ],
-                      "schedule": {
-                          "monday_start": "",
-                          "monday_end": "",
-                          "tuesday_start": "",
-                          "tuesday_end": "",
-                          "wednesday_start": "",
-                          "wednesday_end": "",
-                          "thursday_start": "",
-                          "thursday_end": "",
-                          "friday_start": "",
-                          "friday_end": "",
-                          "saturday_start": "",
-                          "saturday_end": "",
-                          "sunday_start": "",
-                          "sunday_end": "",
-                          "notes": ""
-                      }
-                  }
-              ],
-              "phones": [],
-              "rating": 0,
-              "organization": {
-                  "id": 52,
-                  "name": "Juma Ventures",
-                  "slug": "juma-ventures",
-                  "opportunity_count": 1
-              }
-          },
-          [...etc...]
-      ]
+To match to specific attributes on an object in a `query` search, use the `query[attributes]` parameter. This can then have an `and` object, an `or` object, or a directly nested field-operator-value object. Nested on `and` and `or` parameters are field-operator-value objects. Using `and` will return an resources that match *all* of the attributes specified. Using `or` matches resources that have *any* of the attributes specified.
+
+Each field-operator-value object has the field name as the key, and then an object as the value, which contains an `operator` key-value pair, and a `value` key-value pair.
+
+Operators can be any one of the follow: `equal_to`, `less_than`, `greater_than`, `less_than_or_equal_to`, `greater_than_or_equal_to`, `between`, `any_of`, `all_of`
+
+For example, to retrieve all Housing Properties in Contra Costa or San Francisco, the parameters would be:
+
+    { "query": {
+        attributes": {
+          "county": {
+            "operator": "any_of",
+            "value": ["San Francisco", "Contra Costa"]
+          }
+        }
     }
+
+And the full request with query string, would look like:
+
+    GET /v1/housing_properties?api_key=API_KEY&query[attributes][county][operator]=any_of&query[attributes][county][value][]=Contra+Costa&query[attributes][county][value][]=San+Francisco
+
+For example, to retrieve all Housing Properties in Contra Costa or San Francisco, with maximum waitlist time of 12 months, the parameters would be:
+
+    { "query": {
+        attributes": {
+          "and": {
+            "county": {
+              "operator": "any_of",
+              "value": ["San Francisco", "Contra Costa"]
+            },
+            "waitlist_max": {
+              "operator": "less_than_or_equal_to",
+              "value": 12
+            }
+          }
+        }
+      }
+    }
+
+And the full request with query string, would look like:
+
+    GET /v1/housing_properties?api_key=API_KEY&query[attributes][and][county][operator]=any_of&query[attributes][and][county][value][]=Contra+Costa&query[attributes][and][county][value][]=San+Francisco&query[attributes][and][waitlist_max][operator]=less_than_or_equal_to&query[attributes][and][waitlist_max][value]=12
+
 See also [Pagination Parameters](/docs/common/pagination.md)
