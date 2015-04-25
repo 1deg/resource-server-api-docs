@@ -6,12 +6,12 @@
 
 Field               | Type         | Note       | Description                                  
 --------------------|--------------|------------|---------------------------------------
-`id`                | `integer`    | read-only  | Unique organization ID.
-`slug`              | `string`     | read-only  | Unique organization URL slug.
-`name`              | `string`     | required   | The name of the organization.
-`website`           | `string`     |            | The URL of the organization's website.
-`description`       | `text`       |            | The description of the organization.
-`app_instructions`  | `text`       |            | Instructions of how to submit an application.
+`id`                | `integer`    | read-only  | Unique housing property ID.
+`slug`              | `string`     | read-only  | Unique housing property URL slug.
+`name`              | `string`     | required   | The name of the housing property.
+`website`           | `string`     |            | The URL of the housing property's website.
+`description`       | `text`       |            | The description of the housing property.
+`app_instructions`  | `text`       |            | Instructions on how to submit an application.
 `address`           | `string`     |            | Street address of the housing property.
 `city`              | `string`     |            |
 `state`             | `string`     |            |
