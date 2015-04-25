@@ -25,6 +25,8 @@ One Degree is a 501(c)(3) nonprofit organization, whose mission is to empower pe
 - [Rating Types](/docs/resources/rating-types.md)
 - [Guides](/docs/resources/guides.md)
 - [Organizations](/docs/resources/organizations.md)
+  * [Ratings](/docs/resources/ratings.md)
+  * [Tags](/docs/resources/tags.md)
   * [Comments](/docs/resources/comments.md)
   * [Images](/docs/resources/images.md)
   * [Locations](/docs/resources/locations.md)
@@ -40,5 +42,11 @@ One Degree is a 501(c)(3) nonprofit organization, whose mission is to empower pe
       - [Ratings](/docs/resources/ratings.md)
       - [Schedule](/docs/resources/schedules.md)
       - [Tags](/docs/resources/tags.md)
-  * [Ratings](/docs/resources/ratings.md)
-  * [Tags](/docs/resources/tags.md)
+  * [Housing Properties](/docs/resources/housing-properties.md)
+    - Units
+    - [Rental Office](/docs/resources/locations.md)
+      - [Office Hours](/docs/resources/schedules.md)
+    - [Images](/docs/resources/images.md)
+    - Attachments
+    - [Properties](/docs/resources/properties.md)
+    - [Phones](/docs/resources/phones.md)
