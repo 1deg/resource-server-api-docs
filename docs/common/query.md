@@ -2,7 +2,7 @@
 
 # Query Parameters
 
-Certain resource collections allow for searching by various methods. Currently, only the `Organizations` and `Opportunities` collections support these query parameters.
+Certain resource collections allow for searching by various methods: `Organizations`, `Opportunities`, and `HousingProperties`.
 
 ### Endpoints
 
@@ -10,6 +10,7 @@ The resource collection endpoints are just the top-level endpoints and a `GET` m
 
 - `GET /v1/organizations`
 - `GET /v1/opportunities`
+- `GET /v1/housing_properties`
 
 ### Parameters
 

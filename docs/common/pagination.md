@@ -4,16 +4,9 @@
 
 Most resource collections support pagination parameters to more finely control response volume.
 
-### Endpoints
-
-The resource collection endpoints are just the top-level endpoints with the `GET` method. Examples:
-
-- `GET /v1/organizations/1/opportunities`
-- `GET /v1/organizations/1/opportunities/2/locations`
-
 ### Parameters
 
-The following groups of parameters can be used to query on any resource collection that supports them queries (for now just `Organizations` and `Opportunities`).
+The following groups of parameters can be used to query on any resource collection that supports it (`Organizations`, `Opportunities`, and `HousingProperties`).
 
  Parameter    | Type      | Description                                       | Example
 --------------|-----------|---------------------------------------------------|--------------------
