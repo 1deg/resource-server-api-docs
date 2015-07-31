@@ -53,7 +53,7 @@ Parameter     | Type            | Description                          | Example
 `lat`         | `decimal`       | The latitude around which to search.  | `query[lat]=37.7823`
 `long`        | `decimal`       | The longitude around which to search. | `query[long]=122.46`
 `distance`    | `decimal`       | The radius in kilometers around the coordinates specified in which to search. | `query[distance]=40.2336`
-`order`       | `string`        | The ordering in which to return results. Options are: `best`, `distance`, `popularity`, `newest`. | `query[order]=best`
+`order`       | `string`        | The ordering in which to return results. Options for `Opportunities` and `Organizations` are: `best`, `distance`, `popularity`, `newest`. | `query[order]=best`. For `HousingProperties`, options are: `best`, `earliest` (lowest wait list time), `rent` (lowest rent), and `newest` (most recently added).
 `properties`  | Object of property key-value pairs | Specific properties can be specified to narrow search results by only records that match the given property key-value paris | `query[properties][lang-spanish]=true&query[properties][cost-free]=true`
 `match`       | `string`        | Whether the results should match all attributes provided, or if the results should just be ordered by closeness to them. Possible values are `any`, which orders the results that match any given property, and `properties`, which ensures all results adhere to the properties given. | `match=properties`
 
