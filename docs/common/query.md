@@ -55,7 +55,7 @@ Parameter     | Type            | Description                          | Example
 `distance`    | `decimal`       | The radius in kilometers around the coordinates specified in which to search. | `query[distance]=40.2336`
 `order`       | `string`        | The ordering in which to return results. Options for `Opportunities` and `Organizations` are: `best`, `distance`, `popularity`, `newest`. For `HousingProperties`, options are: `best`, `earliest` (lowest wait list time), `rent` (lowest rent), and `newest` (most recently added). | `query[order]=best`.
 `properties`  | Object of property key-value pairs | Specific properties can be specified to narrow search results by only records that match the given property key-value paris | `query[properties][lang-spanish]=true&query[properties][cost-free]=true`
-`match`       | `string`        | Whether the results should match all attributes provided, or if the results should just be ordered by closeness to them. Possible values are `any`, which orders the results that match any given property, and `properties`, which ensures all results adhere to the properties given. | `match=properties`
+`match`       | `string`        | Whether the results should match all attributes provided, or if the results should just be ordered by closeness to them. Possible values are `any`, which orders the results that match any given property, and `properties`, which ensures all results adhere to the properties given, and `by_type`, which will act to `OR` all properties within a property type family (e.g. `lang-`, `community-`, etc) and AND between property type families. One Degree's ([1deg.org](https://www.1deg.org)) basic search functionality uses `by_type` to filter. | `match=by_type`
 
 Example:
 
