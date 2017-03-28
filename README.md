@@ -1,6 +1,6 @@
 # Resource Server API Documentation
 
-One Degree is revolutionizing the way low-income families access poverty-fighting resources. [Our web and mobile platform](https://www.1deg.org) helps people easily find, manage, and share their experiences with community resources — food banks, employment services, shelters, health clinics, and much more. We also believe that by providing the most underserved populations with tools to find and communicate directly with the agencies that serve them, we can strengthen the social service sector by making it more responsive and aligned with user needs.
+One Degree is revolutionizing the way low-income families access poverty-fighting resources. [Our web and mobile platform](https://www.1degree.org) helps people easily find, manage, and share their experiences with community resources — food banks, employment services, shelters, health clinics, and much more. We also believe that by providing the most underserved populations with tools to find and communicate directly with the agencies that serve them, we can strengthen the social service sector by making it more responsive and aligned with user needs.
 
 Our free API provides our entire database of community and nonprofit resources to other nonprofit organizations and entities. [Request an API key here.](http://socialservicedata.org/api/get-key/)
 

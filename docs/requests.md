@@ -4,7 +4,7 @@
 
 All calls are made to the base URL, along with the specific resource path:
 
-    https://data.1deg.org/v1/
+    https://data.1degree.org/v1/
 
 ## Required Parameter
 
