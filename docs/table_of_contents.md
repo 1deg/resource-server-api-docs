@@ -39,3 +39,4 @@
     - Attachments
     - [Properties](/docs/resources/properties.md)
     - [Phones](/docs/resources/phones.md)
+- [Submissions](/docs/resources/submissions.md)
