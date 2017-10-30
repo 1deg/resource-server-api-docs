@@ -50,3 +50,4 @@ One Degree is a 501(c)(3) nonprofit organization, whose mission is to empower pe
     - Attachments
     - [Properties](/docs/resources/properties.md)
     - [Phones](/docs/resources/phones.md)
+- [Submissions](/docs/resources/submissions.md)
