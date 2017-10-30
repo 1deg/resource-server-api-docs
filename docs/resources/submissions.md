@@ -16,8 +16,8 @@ Field                   | Type              | Note        | Description
 `status`                | `integer`         | read-only   | Whether or not this submission has been approved. Options are `0` = pending, `1` = approved, `2` = rejected. Defaults to pending (0).
 `message`               | `string`          | read-only   | Any message that should be sent to the submitter after either approval or rejection.
 `content`               | `string`          |             | JSON representation of the resource with any proposed changes. JSON should follow same schema as resources sent back from the server.
-`final_content`         | `string`          |             | JSON representation of the resource that was published, which may include changes added by the reviewer of the submission.
-`original_content`      | `string`          |             | JSON representation of the resource with any proposed changes. JSON should follow same schema as resources sent back from the server.
+`final_content`         | `string`          | read-only   | The JSON that was finally published, which may include changes added by the reviewer of the submission.
+`original_content`      | `string`          | read-only   | The JSON that was originally submitted by the user with proposed changes, prior to any changes from the reviewer.
 `reviewer_client_id`    | `integer`         |             | The ID of the API client on which the submission was reviewed and approved or rejected (e.g. One Degree's submission review admin panel).
 `reviewer_client_reviewer_id` | `integer`   |             | The unique identifier of the user that reviewed the submission before being published. Arbitrarily decided by API client.
 `new_resource_id`       | `integer`         | read-only   | If the submission created a new resource, this is set to that new resource's ID.
