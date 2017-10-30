@@ -143,9 +143,3 @@ Updates a organization.
 #### `DELETE /v1/organizations/:id`
 
 Deletes a organization.
-
-### Permissions
-
-* Anyone can add a new organization.
-* Only admins and the original organization owner can update a organization.
-* Only admins can delete a organization.
