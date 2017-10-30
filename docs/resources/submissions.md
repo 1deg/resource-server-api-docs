@@ -7,7 +7,7 @@
 Field                   | Type              | Note        | Description                                  
 ------------------------|-------------------|-------------|---------------------------------------
 `id`                    | `integer`         | read-only   | Unique resource ID.
-`client_id`             | `integer`         | read-only   | The ID of the API client that created the submission (e.g. AsylumConnect's API key)
+`client_id`             | `integer`         | read-only   | The ID of the API client that created the submission (e.g. My Website's API key)
 `client_user_id`        | `integer`         | required    | The unique identifier of the user that created the submission. Arbitrarily decided by API client.
 `parent_resource_id`    | `integer`         |             | The parent of the resource for which this submission is being created (e.g. a submission to update an opportunity, whose parent organization has this ID).
 `parent_resource_type`  | `string`          |             | The parent of the resource for which this submission is being created (e.g. a submission to update an opportunity, whose parent organization has "Organization" as the resource type).
