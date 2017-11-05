@@ -15,7 +15,7 @@ Field                   | Type              | Note        | Description
 `resource_type`         | `string`          |             | The type of the resource for which this submission is being created (e.g. "Opportunity" or "Organization").
 `status`                | `integer`         | read-only   | Whether or not this submission has been approved. Options are `0` = pending, `1` = approved, `2` = rejected. Defaults to pending (0).
 `message`               | `string`          | read-only   | Any message that should be sent to the submitter after either approval or rejection.
-`content`               | `string`          |             | JSON representation of the resource with any proposed changes. JSON should follow same schema as resources sent back from the server.
+`content`               | `string`          |             | JSON representation of the resource with any proposed changes. JSON should follow same schema as resources sent back from the server. Don't provide a root element, so just `{ /* org fields */ }` and not `{ "organization": { /* org fields */ } }`.
 `final_content`         | `string`          | read-only   | The JSON that was finally published, which may include changes added by the reviewer of the submission.
 `original_content`      | `string`          | read-only   | The JSON that was originally submitted by the user with proposed changes, prior to any changes from the reviewer.
 `reviewer_client_id`    | `integer`         |             | The ID of the API client on which the submission was reviewed and approved or rejected (e.g. One Degree's submission review admin panel).
@@ -44,7 +44,7 @@ Creates a new submission.
         "parent_resource_id": 3292
         "parent_resource_type": "Organization"
         "client_user_id": 131399
-        "content": [Opportunity JSON with proposed changes]
+        "content": [Opportunity JSON with proposed changes] // e.g. { "name": "My new org", "description": "This org does this...", etc. }
         "submitter_type": "AffiliatedAdmin"  // Arbitrary
       }
     }

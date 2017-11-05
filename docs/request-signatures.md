@@ -10,68 +10,39 @@ A request signature is a common cryptographic technique that enables the receive
 
 Just add a timestamp and request signature as two additional HTTP headers to all `POST`, `PUT`, and `DELETE` requests.
 
-1. The timestamp header is labeled `1deg-Date` and is an ISO 8601-formatted timestamp.
+1. The timestamp header is labeled `1deg-Date` and is an ISO 8601-formatted timestamp at UTC, **without milliseconds or time zone**. For example, "2017-11-05T20:54:51Z" Note: Depending on the language you're using, the ISO 8601 format may be slightly different. Make sure you are using the "YYYY-MM-DDTHH:mm:ssZ" format and getting the time in UTC (Zulu).
+
 2. The request signature header is labeled `1deg-Signature`. See below for instructions on how to construct it.
 
-### How to construct the request signature
+### Construct the request signature
 
 This should be a hexadecimal digest of lowercase letters and numbers. It should be constructed as follows:
 
-1. Create the string to sign:
-    
-    1. Take the parameters being submitted with the request, and sort the parameters alphabetically in descending order. These parameters should include any resource ID parameters specified in the endpoint. For example, the parameters collection for the endpoint `/v1/organizations/:organization_id/locations/:id` should include `organization_id` and `id`.
-    1. URL encode the parameter names and values. Use `%20` for space (' ') instead of `+`.
-    2. Connect each parameter in a `key=value` format and append them to each other, joined by ampersands (`&`). For example, `name=Organization%20Inc&description=An%20example`.
+1. Create an HMAC SHA256 hexadecimal digest of the body of the request, using your API secret token as the key.
 
-2. Create an HMAC digest of the string created in step 1, using your API secret token as the key.
+2. Create a digest of the ISO 8601-formatted timestamp submitted in the `1deg-Date` header, using the string created in step 1 above as the key.
 
-3. Create an HMAC digest of the ISO 8601-formatted timestamp submitted in the `1deg-Date` header, using the string created in step 2 as the key.
-
-4. Create a SHA2 hexadecimal digest of the string created in step 3.
+3. Create a digest of the string created in step 2.
 
 ### Example Code
 
 #### Ruby
 
-    require 'time'
-    require 'openssl'
-    require 'erb'
+	require 'time'
+	require 'openssl'
 
-    my_secret_token = "my secret token"
+	time 			= Time.now.utc
+	signed_body 	= OpenSSL::HMAC.hexdigest('sha256', secret, body)
+	signed_date 	= OpenSSL::HMAC.hexdigest('sha256', signed_body, time.iso8601)
+	signature 	   	= Digest::SHA2.hexdigest(signed_date)
 
-    params = {
-        api_key: "my api key"
-        resource_id: 3841,
-        name: "Existing Resource Provider, Inc."
-        website: "http://www.this.isan/example" 
-    }
-    param_string = ""
-    params.keys.sort.each do |key|
-        param_string << "&" unless str.blank?
-        param_string << "#{ERB::Util.url_encode(key.to_s)}=#{ERB::Util.url_encode(params[key].to_s)}"
-    end
-    date = Time.now.utc.iso8601
-    signed_params = OpenSSL::HMAC.hexdigest('sha256', my_secret_token, param_string)
-    signed_date = OpenSSL::HMAC.hexdigest('sha256', signed_params, date)
-    signature = Digest::SHA2.hexdigest(signed_date)
+### JavaScript
 
-#### PHP
+	const crypto 			= require('crypto');
+	
+	const today				= new Date();
+	const time_formatted 	= today.toISOString().split('.')[0]+'Z'; // Date().toISOString() actually returns milliseconds so needs massaging
 
-    $secret = "my secret token";
-
-    $params = array();
-    $params['api_key'] = "my api_key";
-    $params['name'] = "new resource name";
-
-    ksort($params);
-    $param_str = "";
-    foreach($params as $key => $value) {
-        if($param_str != "") {
-          $param_str = $param_str . "&";
-        }
-        $param_str = $param_str . rawurlencode($key) . "=" . rawurlencode($value);
-    }
-
-    $signed_params = hash_hmac('sha256', $param_str, $secret);
-    $signed_date =  hash_hmac('sha256', $date, $signed_params);
-    return hash('sha256', $signed_date);
+	const signed_body 		= crypto.createHmac('sha256', secret).update(body).digest('hex');
+	const signed_date 		= crypto.createHmac('sha256', signed_body).update(time_formatted).digest('hex');
+	const signature 		= crypto.createHash('sha256').update(signed_date).digest('hex');
