@@ -11,6 +11,9 @@ Field               | Type         | Note       | Description
 `name`              | `string`     | required   | The name of the organization.
 `website`           | `string`     |            | The URL of the organization's website.
 `description`       | `text`       |            | The description of the organization.
+`region`            | `string`     |            | City and state (or any string Google Maps can geocode), representing the geographic area the organization is based.
+`lat`               | `float`      | read-only  | Latitude of the region. Set automatically upon change in region.
+`lng`               | `float`      | read-only  | Longitude of the region. Set automatically upon change in region.
 `updated_at`        | `string`     | read-only  | The timestamp of the last time the organization was updated.
 `opportunity_count` | `integer`    | read-only  | The number of opportunities the organization provides.
 `rating`            | `decimal`    | read-only  | The average star rating given for this opportunity by users, aggregated across all API clients.
@@ -33,7 +36,10 @@ Returns a specific organization, along with the following nested objects:
 - [`tags`](tags.md)
 - [`locations`](locations.md)
 - [`phones`](phones.md)
+- `emails`
 - top 5 opportunity comments [`comments`](comments.md)
+
+`:id` can either be the numeric ID number or the `slug`, which is also unique across organizations.
 
 Example:
 
