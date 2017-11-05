@@ -44,7 +44,7 @@ Creates a new submission.
         "parent_resource_id": 3292
         "parent_resource_type": "Organization"
         "client_user_id": 131399
-        "content": [Opportunity JSON with proposed changes] // e.g. { "name": "My new org", "description": "This org does this...", etc. }
+        "content": [Opportunity JSON with proposed changes] // e.g. { "title": "Get free groceries", "description": "Here you can get free groceries...", etc. }
         "submitter_type": "AffiliatedAdmin"  // Arbitrary
       }
     }
