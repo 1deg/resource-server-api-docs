@@ -44,91 +44,153 @@ Returns a specific organization, along with the following nested objects:
 Example:
 
     {
-      "id": 3,
-      "name": "ASIAN, Inc.",
-      "slug": "asian-inc",
-      "website": "http://asianinc.org/",
-      "description": "ASIAN, Inc. empowers Asian Americans and other minorities by reducing dependencies that block their access to opportunities in business development, housing and financial education.",
-      "updated_at": "2013-12-14T04:59:55.000Z",
-      "opportunity_count": 4,
-      "tags": [
-          "housing",
-          "home-buying",
-          "affordable-housing"
-      ],
-      "properties": [
-          {
-              "name": "lang-mandarin",
-              "value": "true"
-          },
-          {
-              "name": "lang-cantonese",
-              "value": "true"
-          },
-          {
-              "name": "lang-english",
-              "value": "true"
-          }
-      ],
-      "locations": [
-          {
-              "id": 3,
-              "name": "Primary Location",
-              "address": "1167 Mission Street",
-              "unit": "4th Floor",
-              "city": "San Francisco",
-              "state": "CA",
-              "zip_code": "94103",
-              "lat": 37.7778,
-              "long": -122.412,
-              "is_primary": true,
-              "phones": [
-                  {
-                      "id": 3,
-                      "digits": "4159285910",
-                      "phone_type": "Office",
-                      "is_primary": true
-                  }
-              ],
-              "schedule": {
-                  "monday_start": "",
-                  "monday_end": "",
-                  "tuesday_start": "",
-                  "tuesday_end": "",
-                  "wednesday_start": "",
-                  "wednesday_end": "",
-                  "thursday_start": "",
-                  "thursday_end": "",
-                  "friday_start": "",
-                  "friday_end": "",
-                  "saturday_start": "",
-                  "saturday_end": "",
-                  "sunday_start": "",
-                  "sunday_end": "",
-                  "notes": ""
-              }
-          }
-      ],
-      "phones": [
-          {
-              "id": 4,
-              "digits": "415-928-5910",
-              "phone_type": "Office",
-              "is_primary": true
-          }
-      ],
-      "rating": 0,
-      "opportunity_comments": [
-          {
-              "id": 6,
-              "commentable_type": "Opportunity",
-              "commentable_id": 9,
-              "client_id": 4,
-              "client_user_id": "311",
-              "content": "Para mi esta aplcacion es de mucha ayuda gracias por ayudarme a aplicar veo q es de mucha ayuda",
-              "created_at": "2014-02-25T05:37:14.000Z"
-          }
-      ]
+        "id": 802,
+        "name": "Shepherd's Gate",
+        "region": "Livermore, CA",
+        "slug": "shepherd-s-gate",
+        "website": "http://www.shepherdsgate.org",
+        "description": "Shepard's Gate provides battered homeless women and children with shelter, medical care, counseling, educational courses, job training and more. ",
+        "lat": 37.6819,
+        "lng": -121.768,
+        "updated_at": "2019-07-30T22:43:41.000Z",
+        "resource_type": "Organization",
+        "opportunity_count": 5,
+        "tags": [],
+        "properties": {
+            "service-county-california-alameda": "true"
+        },
+        "locations": [
+            {
+                "id": 1420,
+                "name": "New Life Thrift Store",
+                "address": "4014 East Avenue",
+                "city": "Livermore",
+                "state": "CA",
+                "zip_code": "94550",
+                "lat": 37.681,
+                "long": -121.748,
+                "is_primary": false,
+                "show_on_organization": true,
+                "phones": [
+                    {
+                        "id": 19202,
+                        "digits": "925-606-1924",
+                        "phone_type": "Office",
+                        "is_primary": false
+                    }
+                ],
+                "schedule": {
+                    "monday_start": "09:00",
+                    "monday_end": "19:00",
+                    "tuesday_start": "09:00",
+                    "tuesday_end": "19:00",
+                    "wednesday_start": "09:00",
+                    "wednesday_end": "19:00",
+                    "thursday_start": "09:00",
+                    "thursday_end": "19:00",
+                    "friday_start": "09:00",
+                    "friday_end": "19:00",
+                    "saturday_start": "09:00",
+                    "saturday_end": "17:00"
+                }
+            },
+            {
+                "id": 3484,
+                "name": "Livermore Campus",
+                "address": "1660 Portola Ave",
+                "city": "Livermore",
+                "state": "CA",
+                "zip_code": "94551",
+                "lat": 37.6932,
+                "long": -121.779,
+                "is_primary": false,
+                "show_on_organization": true,
+                "phones": [
+                    {
+                        "id": 19203,
+                        "digits": "888-216-4776",
+                        "phone_type": "Office",
+                        "is_primary": false
+                    },
+                    {
+                        "id": 19204,
+                        "digits": "925-449-3114",
+                        "phone_type": "Fax",
+                        "is_primary": false
+                    }
+                ],
+                "schedule": {
+                    "monday_start": "09:30",
+                    "monday_end": "16:30",
+                    "tuesday_start": "09:30",
+                    "tuesday_end": "16:30",
+                    "wednesday_start": "09:30",
+                    "wednesday_end": "16:30",
+                    "thursday_start": "09:30",
+                    "thursday_end": "16:30"
+                }
+            },
+            {
+                "id": 3485,
+                "name": "Brentwood Campus",
+                "address": "605 Sycamore Ave",
+                "city": "Brentwood",
+                "state": "CA",
+                "zip_code": "94513",
+                "lat": 37.9403,
+                "long": -121.685,
+                "is_primary": false,
+                "show_on_organization": true,
+                "phones": [
+                    {
+                        "id": 19205,
+                        "digits": "888-216-4776",
+                        "phone_type": "Office",
+                        "is_primary": false
+                    }
+                ],
+                "schedule": {
+                    "monday_start": "09:30",
+                    "monday_end": "16:30",
+                    "tuesday_start": "09:30",
+                    "tuesday_end": "16:30",
+                    "wednesday_start": "09:30",
+                    "wednesday_end": "16:30",
+                    "thursday_start": "09:30",
+                    "thursday_end": "16:30"
+                }
+            }
+        ],
+        "phones": [
+            {
+                "id": 39178,
+                "digits": "888-216-4776",
+                "phone_type": "Phone",
+                "is_primary": true
+            },
+            {
+                "id": 39179,
+                "digits": "925-449-3114",
+                "phone_type": "Fax",
+                "is_primary": false
+            }
+        ],
+        "emails": [
+            {
+                "id": 1157,
+                "email": "shepgate@shepherdsgate.org",
+                "title": "",
+                "first_name": "General information",
+                "last_name": "",
+                "is_primary": false,
+                "show_on_organization": true
+            }
+        ],
+        "rating": 0,
+        "images": [],
+        "opportunity_comments": [],
+        "has_pending_submission": false,
+        "last_verified_at": "2018-11-06T10:51:33.000Z"
     }
 
 #### `GET /v1/organizations/:id/get_slug`

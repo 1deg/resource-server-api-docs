@@ -30,6 +30,8 @@
       - [Properties](/docs/resources/properties.md)
       - [Ratings](/docs/resources/ratings.md)
       - [Schedule](/docs/resources/schedules.md)
+      - [Access Instructions](/docs/resources/access_instructions.md)
+      - [Emails](/docs/resources/emails.md)
       - [Tags](/docs/resources/tags.md)
   * [Housing Properties](/docs/resources/housing-properties.md)
     - Units
