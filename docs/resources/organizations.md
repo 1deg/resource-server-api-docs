@@ -17,6 +17,8 @@ Field               | Type         | Note       | Description
 `updated_at`        | `string`     | read-only  | The timestamp of the last time the organization was updated.
 `opportunity_count` | `integer`    | read-only  | The number of opportunities the organization provides.
 `rating`            | `decimal`    | read-only  | The average star rating given for this opportunity by users, aggregated across all API clients.
+`is_closed`         | `boolean`    |            | Whether the organization has been marked as closed.
+
 
 ### Endpoints
 
@@ -54,6 +56,7 @@ Example:
         "lng": -121.768,
         "updated_at": "2019-07-30T22:43:41.000Z",
         "resource_type": "Organization",
+        "is_closed": false,
         "opportunity_count": 5,
         "tags": [],
         "properties": {
