@@ -1,0 +1,761 @@
+{
+	"info": {
+		"_postman_id": "21a6f1c3-4158-4997-b553-acb72a3c4143",
+		"name": "One Degree",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Organizations",
+			"item": [
+				{
+					"name": "Organizations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								},
+								{
+									"key": "query[text]",
+									"value": "health+clinic",
+									"disabled": true
+								},
+								{
+									"key": "query[lat]",
+									"value": "32.750010",
+									"disabled": true
+								},
+								{
+									"key": "query[long]",
+									"value": "-117.101700",
+									"disabled": true
+								},
+								{
+									"key": "query[distance]",
+									"value": "40",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organization",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Rating",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/ratings?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"ratings"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/tags?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/comments?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Images",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/comments?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Phones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/phones?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"phones"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/properties?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Opportunities",
+			"item": [
+				{
+					"name": "Opportunities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/opportunities?api_key={{api_key}}&query[text]=health+clinic&query[lat]=32.750010&query[long]=-117.101700&query[distance]=40",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"opportunities"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								},
+								{
+									"key": "query[text]",
+									"value": "health+clinic"
+								},
+								{
+									"key": "query[lat]",
+									"value": "32.750010"
+								},
+								{
+									"key": "query[long]",
+									"value": "-117.101700"
+								},
+								{
+									"key": "query[distance]",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/opportunities/{{opportunity_id}}?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"opportunities",
+								"{{opportunity_id}}"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Access Instructions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/access_instructions?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"access_instructions"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/comments?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Emails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/comments?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Images",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/images?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"images"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Phones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/phones?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"phones"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/properties?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Rating",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/ratings?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"ratings"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunities Schedule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/schedule?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"schedule"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunity Tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/opportunities/{{opportunity_id}}/tags?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"opportunities",
+								"{{opportunity_id}}",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locations",
+			"item": [
+				{
+					"name": "Organizations Locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/locations?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"locations"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Locations Phones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/locations/{{location_id}}/phones?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"locations",
+								"{{location_id}}",
+								"phones"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizations Locations Schedule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/organizations/{{organization_id}}/locations/{{location_id}}/schedule?api_key={{api_key}}",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organization_id}}",
+								"locations",
+								"{{location_id}}",
+								"schedule"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "{{api_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Property Types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/property_types?api_key={{api_key}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"property_types"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating Types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/rating_types?api_key={{api_key}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"rating_types"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guides",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/guides?api_key={{api_key}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"guides"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submissions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/submissions?api_key={{api_key}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"submissions"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Housing Properties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/housing_properties?api_key={{api_key}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"housing_properties"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api_key}}"
+						},
+						{
+							"key": "query[text]",
+							"value": "health+clinic",
+							"disabled": true
+						},
+						{
+							"key": "query[lat]",
+							"value": "32.750010",
+							"disabled": true
+						},
+						{
+							"key": "query[long]",
+							"value": "-117.101700",
+							"disabled": true
+						},
+						{
+							"key": "query[distance]",
+							"value": "40",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
