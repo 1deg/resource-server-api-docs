@@ -28,7 +28,7 @@ Updates the value of a property. The `:id` in this case is the `name` attribute,
 
 Deletes a property from an organization. The `:id` in this case is the `name` attribute, but the parameter name is `id`, For example `/v1/organizations/3/properties/lang-spanish`.
 
-### Endpoints on Organizations
+### Endpoints on Opportunities
 
 #### `GET /v1/organizations/:organization_id/opportunities/:opportunity_id/properties`
 
