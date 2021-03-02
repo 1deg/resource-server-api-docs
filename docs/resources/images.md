@@ -1,4 +1,4 @@
-gi## Resources
+## Resources
 
 # Images
 
