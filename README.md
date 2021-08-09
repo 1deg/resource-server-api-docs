@@ -53,3 +53,5 @@ One Degree is a 501(c)(3) nonprofit organization, whose mission is to empower pe
     - [Properties](/docs/resources/properties.md)
     - [Phones](/docs/resources/phones.md)
 - [Submissions](/docs/resources/submissions.md)
+
+* Here's a [Postman collection](https://github.com/1deg/resource-server-api-docs/tree/main/postman) contributed by Julian Joseph 
