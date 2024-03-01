@@ -2,7 +2,7 @@
 
 # Pagination Parameters
 
-Most resource collections support pagination parameters to more finely control response volume.
+Most resource collections support pagination parameters to more finely control the response volume.
 
 ### Parameters
 
