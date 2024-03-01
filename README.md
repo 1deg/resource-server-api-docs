@@ -2,9 +2,7 @@
 
 One Degree is revolutionizing the way low-income families access poverty-fighting resources. [Our web and mobile platform](https://www.1degree.org) helps people easily find, manage, and share their experiences with community resources — food banks, employment services, shelters, health clinics, and much more. We also believe that by providing the most underserved populations with tools to find and communicate directly with the agencies that serve them, we can strengthen the social service sector by making it more responsive and aligned with user needs.
 
-Our free API provides our entire database of community and nonprofit resources to other nonprofit organizations and entities. [Request an API key here.](http://socialservicedata.org/api/get-key/)
-
-To learn more about the format and structure of our community resource database, visit [SocialServiceData.org](http://socialservicedata.org/).
+Our API provides access to our entire database of community and nonprofit resources to other nonprofit organizations, partners and clients.
 
 One Degree is a 501(c)(3) nonprofit organization, whose mission is to empower people to create a path out of poverty for themselves and for their communities. We see a world without poverty, where everyone can find the help they need quickly and easily, and can hold their service providers accountable.
 
