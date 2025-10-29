@@ -1,4 +1,4 @@
-# Responses
+# API Responses
 
 ## Content type
 
