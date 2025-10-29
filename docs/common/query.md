@@ -62,7 +62,7 @@ Example:
 
     GET /v1/opportunities?api_key=API_KEY&query[text]=jobs&query[order]=relevance&query[distance]=40.2336&query[lat]=37.7822891&query[long]=-122.463708&query[properties][for-teens]=true&query[properties][lang-spanish]=true&page=1&per_page=10
 
-##### Attributes object
+#### Attributes Object
 
 To match to specific attributes on an object in a `query` search, use the `query[attributes]` parameter. This can then have an `and` object, an `or` object, or a directly nested field-operator-value object. Nested on `and` and `or` parameters are field-operator-value objects. Using `and` will return an resources that match *all* of the attributes specified. Using `or` matches resources that have *any* of the attributes specified.
 
