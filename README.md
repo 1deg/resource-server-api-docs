@@ -1,10 +1,10 @@
 # Resource Server API Documentation
 
-One Degree is revolutionizing the way low-income families access poverty-fighting resources. [Our web and mobile platform](https://www.1degree.org) helps people easily find, manage, and share their experiences with community resources — food banks, employment services, shelters, health clinics, and much more. We also believe that by providing the most underserved populations with tools to find and communicate directly with the agencies that serve them, we can strengthen the social service sector by making it more responsive and aligned with user needs.
+One Degree empowers people to build healthy and fulfilling lives by improving access to life-changing benefits and services.
 
-Our API provides access to our entire database of community and nonprofit resources to other nonprofit organizations, partners and clients.
+Our APIs are designed to support collaboration and interoperability with other 3rd party services to help communities transform how they are coordinating and delivering social services to those in need.
 
-One Degree is a 501(c)(3) nonprofit organization, whose mission is to empower people to create a path out of poverty for themselves and for their communities. We see a world without poverty, where everyone can find the help they need quickly and easily, and can hold their service providers accountable.
+One Degree is a California based 501(c)(3) nonprofit public-benefit corporation.
 
 
 ### [Requests](/docs/requests.md)
