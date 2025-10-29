@@ -1,6 +1,6 @@
 # Documentation
 
-## Overview
+## Overview - Data Structure
 
 ![Data Structure](/files/data_structure.png "Data Structure")
 
