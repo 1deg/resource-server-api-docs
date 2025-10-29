@@ -10,7 +10,7 @@ The resource collection endpoints are just the top-level endpoints and a `GET` m
 
 - `GET /v1/organizations`
 - `GET /v1/opportunities`
-- `GET /v1/housing_properties`
+
 
 ### Parameters
 
@@ -50,12 +50,13 @@ Parameter     | Type            | Description                          | Example
 --------------|-----------------|--------------------------------------|----------------------------
 `text`        | `string`        | Keywords to use for full text searching . Surround the term in quotes (" ") for exact phrase matching. | `query[text]=health+clinic`
 `attributes`  | Object          | Attributes matching, see _Attributes object_ below. | See below.
+`tags`        | `string`        | Searches for classification tags associated with opportunities. | `query[tags]=Childcare`
 `lat`         | `decimal`       | The latitude around which to search.  | `query[lat]=37.7823`
 `long`        | `decimal`       | The longitude around which to search. | `query[long]=122.46`
 `distance`    | `decimal`       | The radius in kilometers around the coordinates specified in which to search. | `query[distance]=40.2336`
-`order`       | `string`        | The ordering in which to return results. `Opportunities` and `Organizations` are sorted automatically by a singled scored called `score` which is calculated based on a `best match`, `distance` and a variety of factors. For `HousingProperties`, options are: `best`, `earliest` (lowest wait list time), `rent` (lowest rent), and `newest` (most recently added). | `query[order]=best`.
+`order`       | `string`        | The ordering in which to return results. `Opportunities` and `Organizations` are sorted automatically by a singled scored called `score` which is calculated based on a `best match`, `distance` and a variety of factors. 
 `properties`  | Object of property key-value pairs | Specific properties can be specified to narrow search results by only records that match the given property key-value paris | `query[properties][lang-spanish]=true&query[properties][cost-free]=true`
-`match`       | `string`        | Whether the results should match all attributes provided, or if some other logic should be applied. Possible values are `any`, which orders the results that match any given property, and `properties`, which ensures all results adhere to the properties given, and `by_type`, which will act to `OR` all properties within a property type category (e.g. `lang-`, `community-`, etc) and `AND` between property type categories. See [SocialServiceData.org's properties list](http://socialservicedata.org/taxonomy/properties/) for the category groupings. One Degree's ([1degree.org](https://www.1degree.org)) basic search functionality uses `by_type` to filter. | `match=by_type`
+`match`       | `string`        | Whether the results should match all attributes provided, or if some other logic should be applied. Possible values are `any`, which orders the results that match any given property, and `properties`, which ensures all results adhere to the properties given, and `by_type`, which will act to `OR` all properties within a property type category (e.g. `lang-`, `community-`, etc) and `AND` between property type categories. One Degree's ([1degree.org](https://www.1degree.org)) basic search functionality uses `by_type` to filter. | `match=by_type`
 
 Example:
 
@@ -68,42 +69,5 @@ To match to specific attributes on an object in a `query` search, use the `query
 Each field-operator-value object has the field name as the key, and then an object as the value, which contains an `operator` key-value pair, and a `value` key-value pair.
 
 Operators can be any one of the follow: `equal_to`, `less_than`, `greater_than`, `less_than_or_equal_to`, `greater_than_or_equal_to`, `between`, `any_of`, `all_of`
-
-For example, to retrieve all Housing Properties in Contra Costa or San Francisco, the parameters would be:
-
-    { "query": {
-        attributes": {
-          "county": {
-            "operator": "any_of",
-            "value": ["San Francisco", "Contra Costa"]
-          }
-        }
-    }
-
-And the full request with query string, would look like:
-
-    GET /v1/housing_properties?api_key=API_KEY&query[attributes][county][operator]=any_of&query[attributes][county][value][]=Contra+Costa&query[attributes][county][value][]=San+Francisco
-
-For example, to retrieve all Housing Properties in Contra Costa or San Francisco, with maximum waitlist time of 12 months, the parameters would be:
-
-    { "query": {
-        attributes": {
-          "and": {
-            "county": {
-              "operator": "any_of",
-              "value": ["San Francisco", "Contra Costa"]
-            },
-            "waitlist_max": {
-              "operator": "less_than_or_equal_to",
-              "value": 12
-            }
-          }
-        }
-      }
-    }
-
-And the full request with query string, would look like:
-
-    GET /v1/housing_properties?api_key=API_KEY&query[attributes][and][county][operator]=any_of&query[attributes][and][county][value][]=Contra+Costa&query[attributes][and][county][value][]=San+Francisco&query[attributes][and][waitlist_max][operator]=less_than_or_equal_to&query[attributes][and][waitlist_max][value]=12
 
 See also [Pagination Parameters](/docs/common/pagination.md)
