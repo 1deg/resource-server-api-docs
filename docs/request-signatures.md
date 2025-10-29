@@ -36,7 +36,7 @@ This should be a hexadecimal digest of lowercase letters and numbers. It should 
 	signed_date 	= OpenSSL::HMAC.hexdigest('sha256', signed_body, time.iso8601)
 	signature 	   	= Digest::SHA2.hexdigest(signed_date)
 
-### JavaScript
+#### JavaScript
 
 	const crypto 			= require('crypto');
 	
