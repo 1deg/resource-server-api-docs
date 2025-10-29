@@ -2,7 +2,7 @@
 
 One Degree empowers people to build healthy and fulfilling lives by improving access to life-changing benefits and services.
 
-Our APIs are designed to support collaboration and interoperability with other 3rd party services to help communities transform how they are coordinating and delivering social services to those in need.
+Our APIs are designed to support interoperability with other 3rd party services to transform how social services are coordinated and delivered.
 
 One Degree is a California based 501(c)(3) nonprofit public-benefit corporation.
 
