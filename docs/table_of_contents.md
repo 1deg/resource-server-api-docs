@@ -6,7 +6,7 @@
   * [Pagination parameters](/docs/common/pagination.md)
 
 ### [Responses](/docs/responses.md)
-  * [API Responses](docs/responses.md)
+  * [API Responses](/docs/responses.md)
 
 ### Resources
 
